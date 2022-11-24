@@ -1,129 +1,200 @@
-.container {
-  padding: 0 2rem;
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('../utils/gilroy-fonts/Gilroy-ExtraBold.ttf');
+  font-weight: 500;
+  font-style: normal;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
+@font-face {
+  font-family: 'Gilroy Light';
+  src: url('../utils/gilroy-fonts/Gilroy-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Circular STD';
+  src: url('../utils/circular-std-medium-500.ttf');
+}
+
+/* NAVBAR */
+.navigation {
+  height: 80px;
+  width: 100%;
+  display: flex;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  position: fixed;
+  padding: 0.5rem 0rem;
+  background-color: transparent;
+  color: black;
+  z-index: 1;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
+.brandName {
   text-decoration: none;
+  color: #fff;
+  margin-left: 1rem;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.brandName>p {
+  font-family: "Gilroy Light";
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+.navigationMenu {
+  margin-left: auto;
 }
 
-.title,
-.description {
+.navigationMenu ul {
+  display: flex;
+  padding: 0;
+}
+
+.navigationMenu li {
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+.navigationMenu li a {
+  font-family: "Gilroy Light";
+  font-weight: light;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+/* HEROBANNER */
+.herobanner {
+  background-image: url('https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1669310566/pexels-cliford-mervil-2398220_1_rb4qgx.jpg');
+  min-height: 90vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header>p:nth-child(1) {
+  color: #fff;
+  position: absolute;
+  font-family: "Gilroy Bold";
+  font-size: 3rem;
+  top: 15%;
+  display: grid;
+  place-content: center;
+  line-height: 85.79px;
+}
+
+.header>p:nth-child(2) {
+  position: absolute;
+  top: 32%;
+  font-family: "Gilroy Light";
+  font-size: 16px;
   text-align: center;
+  color: #fff;
+  letter-spacing: .25px;
 }
 
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
+/* BUTTON */
+.button {
+  border: 3px solid #fff;
   border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  padding: 10px 25px;
+  background-color: transparent;
+  color: #fff;
+  font-family: "Gilroy Light";
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.heroButton {
+  position: absolute;
+  top: 60%;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.socialIcons {
+  position: absolute;
+  top: 25%;
+  right: 2%;
+  left: auto;
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.iconWrapper {
+  background: #D9D9D99C;
+  padding: 17px;
+  margin-top: 20px;
+  border-radius: 55%;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px) {
+  .smallNav {
+    display: none;
+  }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+  .brandName>p {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navigationMenu ul {
+    display: none;
+  }
+
+  .navigationMenu ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
     flex-direction: column;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid black;
   }
-}
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+  .navigationMenu li {
+    text-align: center;
+    margin: 0;
   }
-  .code {
-    background: #111;
+
+  .navigationMenu li a {
+    color: black;
+    width: 100%;
+    padding: 1.5rem 0;
   }
-  .logo img {
-    filter: invert(1);
+
+  .navigationMenu li:hover {
+    background-color: #eee;
+  }
+
+  .navigationMenu.expanded ul {
+    display: block;
+    z-index: 1;
+  }
+
+  .socialIcons {
+    display: none;
   }
 }
