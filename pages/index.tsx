@@ -2,8 +2,6 @@ import Head from "next/head";
 import Explore from "../component/Explore";
 import Herobanner from "../component/Hero";
 import Location from "../component/Location";
-import Subscribe from "../component/Subscribe";
-import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
@@ -18,7 +16,7 @@ const Home = () => {
       </Head>
       <Herobanner />
       <Explore />
-      <Location />
+      <Location className={undefined} id={0} image={""} title={""} />
       {/* <Subscribe /> */}
     </>
   );
