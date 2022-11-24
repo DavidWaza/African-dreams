@@ -331,6 +331,11 @@
     display: flex;
     justify-content: center;
   }
+  .footerText {
+    margin-top: 15%;
+    text-align: center;
+    padding: 20px;
+  }
 }
 
 @media only screen and (width: 820px) {
