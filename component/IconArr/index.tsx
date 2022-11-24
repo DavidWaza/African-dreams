@@ -25,3 +25,35 @@ export const Icons: any[] = [
     url: "twitter.userAfricandream.com"
   },
 ];
+export const Locations: any[] = [
+  {
+    id: 1,
+    image: '/lagos.png',
+    title: 'Lagos'
+  },
+  {
+    id: 2,
+    image: '/abuja.png',
+    title: 'Abuja'
+  },
+  {
+    id: 3,
+    image: '/minna.png',
+    title: 'Minna'
+  },
+  {
+    id: 4,
+    image: '/jos.png',
+    title: 'Jos'
+  },
+  {
+    id: 5,
+    image: '/kogi.png',
+    title: 'Kogi'
+  },
+  {
+    id: 6,
+    image: '/texas.png',
+    title: 'Texas'
+  },
+]

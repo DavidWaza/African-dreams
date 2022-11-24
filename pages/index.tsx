@@ -1,13 +1,16 @@
 import Head from "next/head";
+import Explore from "../component/Explore";
 import Navbar from "../component/Header";
 import Herobanner from "../component/Hero";
+import Location from "../component/Location";
+import Subscribe from "../component/Subscribe";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>AD</title>
+        <title>AD | Home</title>
         <meta
           name="description"
           content="Hiking, Mountain, fun, climb, extra activity, activities, parties"
@@ -16,6 +19,9 @@ const Home = () => {
       </Head>
       <Navbar />
       <Herobanner />
+      <Explore />
+      <Location />
+      <Subscribe />
     </div>
   );
 };

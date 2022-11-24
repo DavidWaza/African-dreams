@@ -16,9 +16,8 @@
 }
 
 .container {
-  background: rgb(3,1,42);
-  background: linear-gradient(45deg, rgba(3,1,42,1) 20%, rgba(51,36,33,1) 35%);
-  height: 100vh;
+  background: rgb(3, 1, 42);
+  background: linear-gradient(45deg, rgba(3, 1, 42, 1) 20%, rgba(34, 23, 21, 1) 35%);
 }
 
 /* NAVBAR */
@@ -112,7 +111,7 @@
 
 .header>p:nth-child(2) {
   position: absolute;
-  top: 32%;
+  top: 25%;
   font-family: "Gilroy Light";
   font-size: 16px;
   text-align: center;
@@ -146,12 +145,88 @@
 }
 
 .iconWrapper {
-  background: #D9D9D99C;
-  padding: 17px;
+  background: rgba(217, 217, 217, 0.61);
+  backdrop-filter: blur(4.5px);
+  padding: 13px 18px;
   margin-top: 20px;
-  border-radius: 55%;
+  border-radius: 50%;
 }
 
+/* EXPLORE MODULE */
+.exploreWrapper {
+  margin-top: 15%;
+  display: grid;
+  place-content: center;
+}
+
+.exploreWrapper>.image:nth-child(2) {
+  margin-top: -25px;
+  margin-left: 20px;
+}
+
+.exploreWrapper>.image:nth-child(3) {
+  margin-top: -25px;
+}
+
+.exploreTitle>p:nth-child(1) {
+  margin-top: 15%;
+  color: #eee;
+  font-size: 2rem;
+  font-family: "Gilroy Bold";
+  width: 250px;
+  letter-spacing: .45px;
+}
+
+.exploreTitle>p:nth-child(2) {
+  line-height: 20px;
+  color: #eee;
+  width: 300px;
+  font-size: 15px;
+  margin-bottom: 10%;
+}
+
+/* LOCATION */
+.locationTitle {
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Gilroy Bold";
+  font-size: 1.7rem;
+  color: #eee;
+}
+
+.location {
+  position: relative;
+  display: grid;
+  place-content: center;
+  margin-top: 10%;
+}
+
+.locationName {
+  text-align: center;
+  color: #eee;
+  font-family: "Gilroy Light";
+  margin-top: 5px;
+}
+
+.star {
+  position: absolute;
+  right: 0;
+  left: 60%;
+  top: 4px;
+}
+.locationButton {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
   .smallNav {
@@ -212,6 +287,21 @@
   .header>p:nth-child(2) {
     top: 35%;
     font-size: 15px;
+  }
+  .exploreTitle>p:nth-child(1) {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .exploreTitle>p:nth-child(2) {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+  }
+  .exploreButton {
+    display: flex;
+    justify-content: center;
   }
 }
 
