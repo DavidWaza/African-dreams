@@ -1,6 +1,6 @@
 import Head from "next/head";
-import  Navbar  from "../component/Header";
-import  Herobanner  from "../component/Hero";
+import Navbar from "../component/Header";
+import Herobanner from "../component/Hero";
 import styles from "../styles/Home.module.css";
 
 const Home = () => {
@@ -18,5 +18,5 @@ const Home = () => {
       <Herobanner />
     </div>
   );
-}
+};
 export default Home;

@@ -15,6 +15,12 @@
   src: url('../utils/circular-std-medium-500.ttf');
 }
 
+.container {
+  background: rgb(3,1,42);
+  background: linear-gradient(45deg, rgba(3,1,42,1) 20%, rgba(51,36,33,1) 35%);
+  height: 100vh;
+}
+
 /* NAVBAR */
 .navigation {
   height: 80px;
@@ -147,7 +153,7 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .smallNav {
     display: none;
   }
@@ -196,5 +202,65 @@
 
   .socialIcons {
     display: none;
+  }
+
+  .header>p:nth-child(1) {
+    top: 20%;
+    font-size: 35px;
+  }
+
+  .header>p:nth-child(2) {
+    top: 35%;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (width: 820px) {
+  .header>p:nth-child(1) {
+    top: 22%;
+    font-size: 3rem;
+  }
+
+  .header>p:nth-child(2) {
+    top: 38%;
+    font-size: 15px;
+  }
+
+  .heroButton {
+    position: absolute;
+    top: 55%;
+  }
+
+  .button {
+    font-weight: bold;
+  }
+
+  .herobanner {
+    min-height: 65vh;
+  }
+}
+
+@media only screen and (width: 912px) {
+  .header>p:nth-child(1) {
+    top: 22%;
+    font-size: 3rem;
+  }
+
+  .header>p:nth-child(2) {
+    top: 38%;
+    font-size: 15px;
+  }
+
+  .heroButton {
+    position: absolute;
+    top: 55%;
+  }
+
+  .button {
+    font-weight: bold;
+  }
+
+  .herobanner {
+    min-height: 65vh;
   }
 }

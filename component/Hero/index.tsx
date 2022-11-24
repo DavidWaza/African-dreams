@@ -3,6 +3,7 @@ import styles from "../../styles/Home.module.css";
 import Button from "../Button/button";
 import Image from "next/image";
 import { Icons } from "../IconArr";
+import Link from "next/link";
 
 const Herobanner = () => {
   return (
@@ -20,9 +21,11 @@ const Herobanner = () => {
           </div>
         </div>
         <div className={styles.socialIcons}>
-          {Icons.map(({ id, icon }) => (
+          {Icons.map(({ id, icon, url }) => (
             <div className={styles.iconWrapper} key={id}>
-              <Image src={icon} alt="vector" width={15} height={15} />
+              <Link href={url}>
+                <Image src={icon} alt="vector" width={15} height={15} />
+              </Link>
             </div>
           ))}
         </div>
