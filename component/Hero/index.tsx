@@ -17,7 +17,7 @@ const Herobanner = () => {
             take tours around the country with us.
           </p>
           <div className={styles.heroButton}>
-            <Button title="join now" />
+            <Button title="join us" />
           </div>
         </div>
         <div className={styles.socialIcons}>

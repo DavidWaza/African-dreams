@@ -214,6 +214,7 @@
   left: 60%;
   top: 4px;
 }
+
 .locationButton {
   margin-top: 5%;
   display: flex;
@@ -227,6 +228,31 @@
   display: flex;
   justify-content: center;
 }
+
+/* FOOTER */
+.footerContainer {
+  background: #F8E1DB;
+  border-radius: 86px 86px 0px 0px;
+  margin-top: 5%;
+}
+
+.footerText {
+  margin-top: 15%;
+  display: grid;
+  place-content: center;
+}
+
+.footerText>h4 {
+  font-family: "Gilroy Bold";
+  text-align: center;
+}
+
+.footerText>p {
+  font-family: "Gilroy Light";
+  font-size: 18px;
+}
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
   .smallNav {
@@ -288,17 +314,19 @@
     top: 35%;
     font-size: 15px;
   }
+
   .exploreTitle>p:nth-child(1) {
     font-size: 40px;
     width: 100%;
     text-align: center;
   }
-  
+
   .exploreTitle>p:nth-child(2) {
     font-size: 14px;
     width: 100%;
     text-align: center;
   }
+
   .exploreButton {
     display: flex;
     justify-content: center;

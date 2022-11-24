@@ -30,7 +30,7 @@ const Location: React.FC<LocationType> = () => {
             </Col>
           ))}
           <div className={styles.locationButton}>
-            <Button title="Join Now" />
+            <Button title="Join Us" />
           </div>
         </Row>
       </Container>

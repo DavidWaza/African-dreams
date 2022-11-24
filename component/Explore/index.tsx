@@ -44,7 +44,7 @@ const Explore = () => {
               </p>
             </div>
             <div className={styles.exploreButton}>
-              <Button title="Join Now" />
+              <Button title="Join Us" />
             </div>
           </Col>
         </Row>

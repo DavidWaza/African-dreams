@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Explore from "../component/Explore";
-import Navbar from "../component/Header";
 import Herobanner from "../component/Hero";
 import Location from "../component/Location";
 import Subscribe from "../component/Subscribe";
@@ -8,7 +7,7 @@ import styles from "../styles/Home.module.css";
 
 const Home = () => {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
         <title>AD | Home</title>
         <meta
@@ -17,12 +16,11 @@ const Home = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Herobanner />
       <Explore />
       <Location />
-      <Subscribe />
-    </div>
+      {/* <Subscribe /> */}
+    </>
   );
 };
 export default Home;

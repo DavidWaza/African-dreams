@@ -1,3 +1,5 @@
+import { url } from "inspector";
+
 export const Icons: any[] = [
   {
     id: 1,
@@ -55,5 +57,29 @@ export const Locations: any[] = [
     id: 6,
     image: '/texas.png',
     title: 'Texas'
+  },
+]
+export const FooterArr: any[] = [
+  {
+    id: 1,
+    title: "African Dream Community",
+    slugOne: "Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.",
+  },
+  {
+    id: 2,
+    title: "Get to know us",
+    slugOne: "About us",
+    slugTwo: "Rules & Reservation Policies",
+    slugThree: "Accessibility",
+    slugFour: "Media Center",
+    slugFive: "Site Map"
+  },
+  {
+    id: 3,
+    title: "Plan with us",
+    slugOne: "Find trip Inspiration",
+    slugTwo: "Book a Trip",
+    slugThree: "Buy a Pass",
+    slugFour: "Enter a Lottery",
   },
 ]
