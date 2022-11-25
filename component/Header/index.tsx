@@ -1,9 +1,25 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import styles from "../../styles/Home.module.css";
 
- const Navbar: any = () => {
+const Navbar: any = () => {
   const [isNavExpanded, setIsNavExpanded] = useState<any>(false);
+  // const [isScrolled, setIsScrolled] = useState<any>(false);
+
+  // const handleScroll = () => {
+  //   if(window.scrollY > 200) {
+  //     setIsScrolled(true)
+  //   } else {
+  //     setIsScrolled(false)
+  //   }
+  // }
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll)
+  // })
+  // if(isScrolled) {
+  //   ("sticky")
+  // }
+
   return (
     <>
       <nav className={styles.navigation}>

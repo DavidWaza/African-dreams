@@ -4,6 +4,7 @@ import Herobanner from "../component/Hero";
 import Location from "../component/Location";
 
 const Home = () => {
+
   return (
     <>
       <Head>
