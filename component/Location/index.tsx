@@ -24,7 +24,7 @@ const Location: React.FC<LocationType> = () => {
             <Col sm={4} key={id}>
               <div className={styles.location}>
                 <Image src="/star.png" alt="star" width={20} height={20} className={styles.star} />
-                <Image src={image} alt="location" width={200} height={200} />
+                <Image src={image} alt="location" width={200} height={200} className={styles.image} />
                 <p className={styles.locationName}>{title}</p>
               </div>
             </Col>

@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../utils/gilroy-fonts/Gilroy-ExtraBold.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('../utils/gilroy-fonts/Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Circular STD';
+    src: url('../utils/circular-std-medium-500.ttf');
+}
+
+/* BANNER */
+.banner {
+    background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1669371007/DSC02607_qzlpci.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    top: 0;
+}
+
+.bannerHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerHeader>p:nth-child(1) {
+    position: absolute;
+    top: 25%;
+    color: #fff;
+    font-family: "Gilroy Bold";
+    font-size: 2.2rem;
+}
+
+.bannerHeader>p:nth-child(2) {
+    position: absolute;
+    top: 35%;
+    color: #fff;
+    letter-spacing: .30px;
+    font-family: "Gilroy Light";
+}
+
+.booking {
+    position: absolute;
+    top: 40%;
+}
+
+/* MEDIA QUEURIES */
+@media screen and (max-width: 768px) {
+    .bannerHeader>p:nth-child(2) {
+        top: 34%;
+    }
+}
+
+@media only screen and (width: 820px) {
+    .bannerHeader>p:nth-child(2) {
+        top: 30%;
+    }
+}
+
+@media only screen and (width: 912px) {
+    .bannerHeader>p:nth-child(2) {
+        top: 30%;
+    }
+}

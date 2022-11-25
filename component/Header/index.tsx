@@ -63,7 +63,7 @@ const Navbar: any = () => {
               <Link href="/adventures">Adventures</Link>
             </li>
             <li>
-              <Link href="/ticket">Tickets</Link>
+              <Link href="/booking">Tickets</Link>
             </li>
             <li>
               <a href="/gallery">Gallery</a>
