@@ -10,7 +10,7 @@ const Booking = () => {
         <title>AD | Ticket</title>
         <meta
           name="description"
-          content="Hiking, Mountain, fun, climb, extra activity, activities, parties"
+          content="Hiking, Mountain, fun, climb, extra activity, activities, parties, tickets"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -19,7 +19,7 @@ const Booking = () => {
           <p>Bookings/Events</p>
           <p>Join our expenditure</p>
           <div className={TicketStyles.booking}>
-            <BookingCard id={0} title={""} slug={""} price={""} />
+            <BookingCard id={0} title={""} slug={""} price={""} href={""} />
           </div>
         </div>
       </div>

@@ -394,6 +394,84 @@
   font-size: 18px;
 }
 
+/* CAROUSEL */
+.Carousel {
+  width: 50%;
+  margin: 5% auto;
+}
+.carouselSlideOne, .carouselSlideTwo, .carouselSlideThree {
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  border-radius: 55px;
+}
+.carouselSlideOne {
+  background-image: url("/bushman.png");
+}
+.carouselSlideTwo {
+  background-image: url('/pool.png');
+}
+.carouselSlideThree {
+  background-image: url("/adsquad.png");
+}
+.carouselSlideOne > p:nth-child(1) {
+  color: #eee;
+  font-family: "Gilroy Bold";
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  letter-spacing: 0.35px;
+}
+.carouselSlideOne > p:nth-child(2) {
+  color: #eee;
+  font-family: "Gilroy Bold";
+  position:absolute;
+  top: 12%;
+  left:7%;
+  letter-spacing: 0.38px;
+}
+.carouselSlideTwo > p:nth-child(1) {
+  color: #eee;
+  font-family: "Gilroy Bold";
+  position:absolute;
+  top: 5%;
+  left:7%;
+  letter-spacing: 0.38px;
+}
+.carouselSlideTwo > p:nth-child(2) {
+  color: #eee;
+  font-family: "Gilroy Bold";
+  position:absolute;
+  top: 12%;
+  left:7%;
+  letter-spacing: 0.38px;
+}
+.carouselSlideThree > p:nth-child(1) {
+  color: #eee;
+  font-family: "Gilroy Bold";
+  position:absolute;
+  top: 5%;
+  left:7%;
+  letter-spacing: 0.38px;
+}
+.carouselSlideThree > p:nth-child(2) {
+  color: #eee;
+  font-family: "Gilroy Bold";
+  position:absolute;
+  top: 12%;
+  left:7%;
+  letter-spacing: 0.38px;
+}
+
+.carouselLink {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  font-family: "Gilroy Bold";
+  color: #eee;
+
+  /* right: 10%; */
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
@@ -485,6 +563,13 @@
   .bookingCard {
     display: none;
   }
+  .Carousel {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .carouselSlideOne, .carouselSlideTwo, .carouselSlideThree {
+    height: 40vh;
+  }
 }
 
 @media only screen and (width: 820px) {
@@ -510,6 +595,10 @@
   .herobanner {
     min-height: 65vh;
   }
+  .Carousel {
+    width: 100%;
+    padding: 0px 20px;
+  }
 }
 
 @media only screen and (width: 912px) {
@@ -534,5 +623,9 @@
 
   .herobanner {
     min-height: 65vh;
+  }
+  .Carousel {
+    width: 100%;
+    padding: 0px 20px;
   }
 }
