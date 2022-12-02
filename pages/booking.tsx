@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import TicketStyles from "../styles/Ticket.module.css";
 import BookingCard from "../component/Booking";
+import Subscribe from "../component/Subscribe";
 
 const Booking = () => {
   return (
@@ -23,6 +24,7 @@ const Booking = () => {
           </div>
         </div>
       </div>
+      <Subscribe />
     </>
   );
 };

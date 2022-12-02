@@ -2,6 +2,7 @@ import Head from "next/head";
 import Explore from "../component/Explore";
 import Herobanner from "../component/Hero";
 import Location from "../component/Location";
+import Subscribe from "../component/Subscribe/index"
 
 const Home = () => {
 
@@ -18,7 +19,7 @@ const Home = () => {
       <Herobanner />
       <Explore />
       <Location className={undefined} id={0} image={""} title={""} />
-      {/* <Subscribe /> */}
+      <Subscribe />
     </>
   );
 };

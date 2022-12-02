@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 import TicketStyles from "../styles/Ticket.module.css";
 import CarouselSlide from "../component/Carousel";
+import Subscribe from "../component/Subscribe";
 
 const gallery = () => {
   return (
@@ -21,8 +22,9 @@ const gallery = () => {
         </div>
       </div>
       <div className={TicketStyles.carouselContainer}>
-      <CarouselSlide />
+        <CarouselSlide />
       </div>
+      <Subscribe />
     </>
   );
 };

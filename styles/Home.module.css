@@ -308,6 +308,77 @@
   justify-content: center;
 }
 
+.subScribeContainer {
+  background: linear-gradient(89.94deg, #C27662 50.04%, #FED3C7 93.87%);
+  border-radius: 41px;
+  height: 40vh;
+  width: 70%;
+  position: relative;
+}
+
+.imgContainer {
+  position: relative;
+  height: 270px;
+  width: 270px;
+  top: 10px;
+  right: 0;
+  left: auto;
+  float: right;
+  padding: 0px 10px;
+}
+
+.iconSend {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  left: auto;
+  height: 30px;
+  width: 30px;
+  background-color: #CF5B3E;
+  border-radius:6px ;
+}
+.iconSend > img {
+  margin-top: 2px;
+  margin-left: 4px;
+  height: 19px;
+  width: 19px;
+}
+.campContent {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  color: #eee;
+}
+
+.campContent>p:nth-child(1) {
+  font-size: 2em;
+  font-family: 'Gilroy Bold';
+}
+
+.campContent>p:nth-child(2) {
+  font-size: 1.2em;
+  font-family: "Gilroy Light";
+  width: 300px;
+  margin-top: -10px;
+}
+
+.formContainer {
+  position: absolute;
+  top: 105%;
+}
+
+.formContainer>input {
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 16px;
+  width: 300px;
+  position: relative;
+}
+
+
+
+
 /* BOOKING CARD */
 .bookingCard {
   padding: 10px 5px;
@@ -341,7 +412,7 @@
   border-radius: 10px
 }
 
-.bookingValue > a{
+.bookingValue>a {
   position: absolute;
   top: 12px;
   color: #eee;
@@ -351,12 +422,14 @@
   padding: 0px 12px;
   text-decoration: none;
 }
+
 .bookingPrice {
   padding: 0px 5px;
   display: flex;
   justify-content: center;
 }
-.bookingPrice > p{
+
+.bookingPrice>p {
   background-color: #D9D9D9;
   padding: 7px 20px;
   text-align: center;
@@ -399,22 +472,29 @@
   width: 50%;
   margin: 5% auto;
 }
-.carouselSlideOne, .carouselSlideTwo, .carouselSlideThree {
+
+.carouselSlideOne,
+.carouselSlideTwo,
+.carouselSlideThree {
   background-position: center;
   background-size: cover;
   height: 50vh;
   border-radius: 55px;
 }
+
 .carouselSlideOne {
   background-image: url("/bushman.png");
 }
+
 .carouselSlideTwo {
   background-image: url('/pool.png');
 }
+
 .carouselSlideThree {
   background-image: url("/adsquad.png");
 }
-.carouselSlideOne > p:nth-child(1) {
+
+.carouselSlideOne>p:nth-child(1) {
   color: #eee;
   font-family: "Gilroy Bold";
   position: absolute;
@@ -422,44 +502,49 @@
   left: 7%;
   letter-spacing: 0.35px;
 }
-.carouselSlideOne > p:nth-child(2) {
+
+.carouselSlideOne>p:nth-child(2) {
   color: #eee;
   font-family: "Gilroy Bold";
-  position:absolute;
+  position: absolute;
   top: 12%;
-  left:7%;
+  left: 7%;
   letter-spacing: 0.38px;
 }
-.carouselSlideTwo > p:nth-child(1) {
+
+.carouselSlideTwo>p:nth-child(1) {
   color: #eee;
   font-family: "Gilroy Bold";
-  position:absolute;
+  position: absolute;
   top: 5%;
-  left:7%;
+  left: 7%;
   letter-spacing: 0.38px;
 }
-.carouselSlideTwo > p:nth-child(2) {
+
+.carouselSlideTwo>p:nth-child(2) {
   color: #eee;
   font-family: "Gilroy Bold";
-  position:absolute;
+  position: absolute;
   top: 12%;
-  left:7%;
+  left: 7%;
   letter-spacing: 0.38px;
 }
-.carouselSlideThree > p:nth-child(1) {
+
+.carouselSlideThree>p:nth-child(1) {
   color: #eee;
   font-family: "Gilroy Bold";
-  position:absolute;
+  position: absolute;
   top: 5%;
-  left:7%;
+  left: 7%;
   letter-spacing: 0.38px;
 }
-.carouselSlideThree > p:nth-child(2) {
+
+.carouselSlideThree>p:nth-child(2) {
   color: #eee;
   font-family: "Gilroy Bold";
-  position:absolute;
+  position: absolute;
   top: 12%;
-  left:7%;
+  left: 7%;
   letter-spacing: 0.38px;
 }
 
@@ -557,19 +642,44 @@
     text-align: center;
     padding: 20px;
   }
+
   .bookingWrapper {
     display: none;
   }
+
   .bookingCard {
     display: none;
   }
+
   .Carousel {
     width: 100%;
     padding: 0px 20px;
   }
-  .carouselSlideOne, .carouselSlideTwo, .carouselSlideThree {
+
+  .carouselSlideOne,
+  .carouselSlideTwo,
+  .carouselSlideThree {
     height: 40vh;
   }
+
+  .imgContainer {
+    display: none;
+  }
+
+  .campContent>p:nth-child(1) {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .campContent>p:nth-child(2) {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .subScribeContainer {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (width: 820px) {
@@ -595,6 +705,7 @@
   .herobanner {
     min-height: 65vh;
   }
+
   .Carousel {
     width: 100%;
     padding: 0px 20px;
@@ -624,6 +735,7 @@
   .herobanner {
     min-height: 65vh;
   }
+
   .Carousel {
     width: 100%;
     padding: 0px 20px;
