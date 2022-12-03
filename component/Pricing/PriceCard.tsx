@@ -57,7 +57,7 @@ const PriceCard: React.FC<PriceCardProps> = () => {
               duration="p"
               currency="N"
               buttonContent="Buy Now"
-              subTitle="Gang Camping Pass (free drinks)"
+              subTitle="Gang Camping Pass"
               headerText="Bush Doings"
             />
           </Col>

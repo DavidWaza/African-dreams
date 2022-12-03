@@ -48,7 +48,7 @@ const Pricing: React.FC<PriceProps> = ({
               </PriceContainer>
               {subTitle && (
                 <SubTitle>
-                  <h4>{subTitle}</h4>
+                  <p>{subTitle}</p>
                 </SubTitle>
               )}
               {buttonContent && (
@@ -93,8 +93,8 @@ const Pricing: React.FC<PriceProps> = ({
 export default Pricing;
 
 const PriceWrapper = styled.div`
-  margin-top: 80%;
   @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
+  margin-top: 80%;
   font-family: "Heebo", sans-serif;
 
   @media screen and (max-width: 970px) {
@@ -162,6 +162,7 @@ const SubTitle = styled.div`
   text-transform: uppercase;
   text-align: center;
   margin: 0.4rem 0 1.3rem 0;
+  font-size: 1.3em;
 `;
 
 const ButtonContainer = styled.div`

@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import TicketStyles from "../styles/Ticket.module.css";
-import BookingCard from "../component/Booking";
+import BookingCard from "../component/Booking/bookingCard";
 import Subscribe from "../component/Subscribe";
 
-const Booking = () => {
+const BookingShow = () => {
   return (
     <>
       <Head>
@@ -20,7 +20,7 @@ const Booking = () => {
           <p>Bookings/Events</p>
           <p>Join our expenditure</p>
           <div className={TicketStyles.booking}>
-            <BookingCard id={0} title={""} slug={""} price={""} href={""} />
+            <BookingCard eventTitle={""} date={undefined} buttonText={""}  />
           </div>
         </div>
       </div>
@@ -28,4 +28,4 @@ const Booking = () => {
     </>
   );
 };
-export default Booking;
+export default BookingShow;
