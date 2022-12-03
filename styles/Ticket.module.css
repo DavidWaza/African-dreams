@@ -24,15 +24,15 @@
     position: relative;
     top: 0;
 }
+
 .eventBanner {
-    background-image: url("/camp.webp");
+    background-image: url("https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1669371007/DSC02607_qzlpci.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 150vh;
     position: relative;
     top: 0;
-    
+
 }
 
 .bannerHeader {
@@ -60,11 +60,7 @@
     position: absolute;
     top: 40%;
 }
-.pricingDiv {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-}
+
 
 /* GALLERY */
 .wrapper {
@@ -73,8 +69,15 @@
 
 /* MEDIA QUEURIES */
 @media screen and (max-width: 768px) {
+    .bannerHeader>p:nth-child(1) {
+        display: none;
+    }
     .bannerHeader>p:nth-child(2) {
         top: 34%;
+    }
+
+    .eventBanner {
+        background-image: none;
     }
 }
 

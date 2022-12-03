@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import React from "react";
+import { FaCheck } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 
 type PriceProps = {
   shadow: any;
@@ -10,10 +12,13 @@ type PriceProps = {
   duration: string;
   subTitle: string;
   buttonContent: string;
+  data: any;
+  value: number;
+  text: string;
+  index: any;
 };
 
 const Pricing: React.FC<PriceProps> = ({
-  background,
   shadow,
   headerText,
   price,
@@ -21,53 +26,82 @@ const Pricing: React.FC<PriceProps> = ({
   duration,
   subTitle,
   buttonContent,
+  data,
 }) => {
   return (
     <>
-      <MainContainer shadow={shadow}>
-        <Header background={background}>{headerText}</Header>
-        {price !== undefined && (
-          <PricingContainer>
-            <PriceContainer>
-              <CurrencyContainer>
-                <span>{currency}</span>
-              </CurrencyContainer>
-              <Price>
-                <span>{price}</span>
-              </Price>
-              {price > 0 && (
-                <Duration>
-                  <span>{duration === "p" ? "/P" : ""}</span>
-                </Duration>
+      <PriceWrapper>
+        <MainContainer shadow={shadow}>
+          <Header>
+            <CaroImage></CaroImage>
+          </Header>
+          {price !== undefined && (
+            <PricingContainer>
+              <PriceContainer>
+                <CurrencyContainer>
+                  <span>{currency}</span>
+                </CurrencyContainer>
+                <Price>
+                  <span>{price}</span>
+                </Price>
+                {price > 0 && (
+                  <Duration>
+                    <span>{duration === "p" ? "/P" : ""}</span>
+                  </Duration>
+                )}
+              </PriceContainer>
+              {subTitle && (
+                <SubTitle>
+                  <h4>{subTitle}</h4>
+                </SubTitle>
               )}
-            </PriceContainer>
-            {subTitle && (
-              <SubTitle>
-                <h4>{subTitle}</h4>
-              </SubTitle>
-            )}
-            {buttonContent && (
-              <ButtonContainer>
-                <Button>{buttonContent}</Button>
-              </ButtonContainer>
-            )}
-          </PricingContainer>
-        )}
-      </MainContainer>
+              {buttonContent && (
+                <ButtonContainer>
+                  <Button>{buttonContent}</Button>
+                </ButtonContainer>
+              )}
+              {data && (
+                <DataContainer>
+                  <ul>
+                    {data.map(({ text, value, index }) => (
+                      <li key={index}>
+                        {value ? (
+                          <FaCheck className="true" />
+                        ) : (
+                          <ImCross className="false" />
+                        )}
+                        {text}
+                      </li>
+                    ))}
+                  </ul>
+                </DataContainer>
+              )}
+            </PricingContainer>
+          )}
+        </MainContainer>
+      </PriceWrapper>
     </>
   );
 };
 
 export default Pricing;
 
+const PriceWrapper = styled.div`
+  margin-top: 80%;
+
+  @media screen and (max-width: 970px) {
+    margin-top: 30%;
+  }
+`;
 const MainContainer = styled.div<PriceProps>`
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap");
   padding: 3em;
   min-height: 20rem;
-  height: max-content;
-  background: #fff;
-  flex-direction: column;
-  color: #1d3557;
-  opacity: 0.6;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  background: #145a32;
+  color: #fff;
+  opacity: 1;
   box-shadow: 0 8px 14px -6px ${(props) => props.shadow};
   transition: 0.4s ease-in-out;
   &:hover {
@@ -76,7 +110,6 @@ const MainContainer = styled.div<PriceProps>`
   }
 `;
 const Header = styled.div<PriceProps>`
-  margin: 0.6rem;
   height: 4rem;
   text-transform: uppercase;
   display: flex;
@@ -85,6 +118,20 @@ const Header = styled.div<PriceProps>`
   font-size: larger;
   font-weight: 600;
   color: #000;
+  font-family: "Raleway", sans-serif;
+`;
+
+const CaroImage = styled.div`
+  background-image: url("/bush.jpg");
+  background-size: cover;
+  background-position: 10px -40px;
+  background-repeat: no-repeat;
+  min-height: 15vh;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding-top: 30%;
+  font-weight: Bold;
 `;
 const PricingContainer = styled.div`
   height: 30%;
@@ -120,19 +167,12 @@ const SubTitle = styled.div`
   margin: 0.4rem 0 1.3rem 0;
 `;
 
-const PriceText = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  text-align: center;
-  font-weight: 100;
-`;
-
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
+  width: 100%;
 `;
 
 const Button = styled.button`
@@ -141,15 +181,17 @@ const Button = styled.button`
   align-items: center;
   text-transform: uppercase;
   border-radius: 0.3rem;
-  border: 0.1rem solid #1d3557;
-  width: 90%;
+  border: 0.1rem solid #b7950b;
+  width: 100%;
+  color: #fff;
+  padding: 0 16px;
   height: 3.5rem;
   background-color: transparent;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease-in-out;
   &:hover {
-    background-color: #1d3557;
+    background-color: #b7950b;
     color: white;
   }
 `;
@@ -160,6 +202,7 @@ const DataContainer = styled.div`
     li {
       display: flex;
       align-items: center;
+      font-weight: bold;
       .true {
         color: #34f034;
         font-size: 1rem;

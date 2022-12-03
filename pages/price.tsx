@@ -23,7 +23,6 @@ const Price: React.FC<PriceProps> = () => {
       <div className={TicketStyles.eventBanner}>
         <div className={TicketStyles.bannerHeader}>
           <p>Bookings/Events</p>
-          <p>Join our expenditure</p>
         </div>
         <div className={TicketStyles.pricingDiv}>
           <PriceCard />
