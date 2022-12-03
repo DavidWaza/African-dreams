@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import styles from "../../styles/Home.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Subscribe = () => {
   return (
@@ -18,17 +19,19 @@ const Subscribe = () => {
                       <p>Let's stay in Touch</p>
                       <p>Keep updated with our travel plans and adventures.</p>
                       <form className={styles.formContainer}>
-                        <input></input>
+                        <input type="text" />
                         <div className={styles.iconSendContainer}>
                           <div className={styles.iconSend}>
-                            <Image
-                              src="/send.png"
-                              alt="alt"
-                              height={20}
-                              width={20}
-                              objectFit="cover"
-                              objectPosition="center"
-                            />
+                            <Link href="/">
+                              <Image
+                                src="/send.png"
+                                alt="alt"
+                                height={20}
+                                width={20}
+                                objectFit="cover"
+                                objectPosition="center"
+                              />
+                            </Link>
                           </div>
                         </div>
                       </form>

@@ -4,22 +4,6 @@ import styles from "../../styles/Home.module.css";
 
 const Navbar: any = () => {
   const [isNavExpanded, setIsNavExpanded] = useState<any>(false);
-  // const [isScrolled, setIsScrolled] = useState<any>(false);
-
-  // const handleScroll = () => {
-  //   if(window.scrollY > 200) {
-  //     setIsScrolled(true)
-  //   } else {
-  //     setIsScrolled(false)
-  //   }
-  // }
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll)
-  // })
-  // if(isScrolled) {
-  //   ("sticky")
-  // }
-
   return (
     <>
       <nav className={styles.navigation}>
@@ -66,10 +50,10 @@ const Navbar: any = () => {
               <Link href="/booking">Tickets</Link>
             </li>
             <li>
-              <a href="/gallery">Gallery</a>
+              <Link href="/gallery">Gallery</Link>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <Link href="/about">About Us</Link>
             </li>
           </ul>
         </div>

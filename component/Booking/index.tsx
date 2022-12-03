@@ -31,7 +31,7 @@ const BookingCard: React.FC<booking> = () => {
                   <Row>
                     <Col sm={6}>
                       <div className={styles.bookingValue}>
-                        <Link href="/">book now</Link>
+                        <Link href="">book now</Link>
                       </div>
                     </Col>
                     <Col sm={6}>

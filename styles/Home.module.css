@@ -311,8 +311,7 @@
 .subScribeContainer {
   background: linear-gradient(89.94deg, #C27662 50.04%, #FED3C7 93.87%);
   border-radius: 41px;
-  height: 40vh;
-  width: 70%;
+  width: 80%;
   position: relative;
 }
 
@@ -335,14 +334,15 @@
   height: 30px;
   width: 30px;
   background-color: #CF5B3E;
-  border-radius:6px ;
+  border-radius: 6px;
 }
-.iconSend > img {
-  margin-top: 2px;
+
+.iconSend> a {
   margin-left: 4px;
-  height: 19px;
-  width: 19px;
+  height: 19.5px;
+  width: 19.5px;
 }
+
 .campContent {
   position: absolute;
   top: 15%;
@@ -374,6 +374,7 @@
   padding: 10px 16px;
   width: 300px;
   position: relative;
+  resize: vertical;
 }
 
 
@@ -559,7 +560,7 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .smallNav {
     display: none;
   }
@@ -677,8 +678,10 @@
   }
 
   .subScribeContainer {
+    height: 35vh;
     width: 100%;
   }
+
 
 }
 
