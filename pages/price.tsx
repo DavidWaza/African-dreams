@@ -1,7 +1,7 @@
 import React, { Children } from "react";
 import Head from "next/head";
 import TicketStyles from "../styles/Ticket.module.css";
-import PriceCard from "../component/Pricing/PriceCard"
+import PriceCard from "../component/Pricing/PriceCard";
 
 type PriceProps = {
   shadow: any;
@@ -25,7 +25,17 @@ const Price: React.FC<PriceProps> = () => {
           <p>Bookings/Events</p>
         </div>
         <div className={TicketStyles.pricingDiv}>
-          <PriceCard />
+          <PriceCard
+            text={""}
+            value={false}
+            price={0}
+            duration={""}
+            currency={""}
+            buttonContent={""}
+            subTitle={""}
+            priceText={""}
+            headerText={""}
+          />
         </div>
       </div>
     </>

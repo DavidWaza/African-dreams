@@ -4,23 +4,21 @@ import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 
 type PriceProps = {
-  shadow: any;
-  background: any;
+  shadow?: any;
+  background?: any;
   headerText: string;
   price: number;
-  currency: number;
+  currency: string;
   duration: string;
   subTitle: string;
   buttonContent: string;
   data: any;
-  value: number;
-  text: string;
-  index: any;
+  value?: number;
+  text?: string;
+  index?: any;
 };
 
 const Pricing: React.FC<PriceProps> = ({
-  shadow,
-  headerText,
   price,
   currency,
   duration,
@@ -31,10 +29,8 @@ const Pricing: React.FC<PriceProps> = ({
   return (
     <>
       <PriceWrapper>
-        <MainContainer shadow={shadow}>
-          <Header>
-            <CaroImage></CaroImage>
-          </Header>
+        <MainContainer>
+          <CaroImage></CaroImage>
           {price !== undefined && (
             <PricingContainer>
               <PriceContainer>
@@ -63,16 +59,26 @@ const Pricing: React.FC<PriceProps> = ({
               {data && (
                 <DataContainer>
                   <ul>
-                    {data.map(({ text, value, index }) => (
-                      <li key={index}>
-                        {value ? (
-                          <FaCheck className="true" />
-                        ) : (
-                          <ImCross className="false" />
-                        )}
-                        {text}
-                      </li>
-                    ))}
+                    {data.map(
+                      ({
+                        text,
+                        value,
+                        index,
+                      }: {
+                        text: string;
+                        value: number;
+                        index: number;
+                      }) => (
+                        <li key={index}>
+                          {value ? (
+                            <FaCheck className="true" />
+                          ) : (
+                            <ImCross className="false" />
+                          )}
+                          {text}
+                        </li>
+                      )
+                    )}
                   </ul>
                 </DataContainer>
               )}
@@ -88,39 +94,28 @@ export default Pricing;
 
 const PriceWrapper = styled.div`
   margin-top: 80%;
+  @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
+  font-family: "Heebo", sans-serif;
 
   @media screen and (max-width: 970px) {
     margin-top: 30%;
   }
 `;
-const MainContainer = styled.div<PriceProps>`
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap");
+const MainContainer = styled.div`
   padding: 3em;
   min-height: 20rem;
-  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
   font-weight: 500;
   background: #145a32;
   color: #fff;
   opacity: 1;
-  box-shadow: 0 8px 14px -6px ${(props) => props.shadow};
+  box-shadow: 0 8px 14px -6px;
   transition: 0.4s ease-in-out;
   &:hover {
-    box-shadow: 0 8px 26px -6px ${(props) => props.shadow};
+    box-shadow: 0 8px 26px -6px;
     margin-bottom: 0.4rem;
   }
 `;
-const Header = styled.div<PriceProps>`
-  height: 4rem;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: larger;
-  font-weight: 600;
-  color: #000;
-  font-family: "Raleway", sans-serif;
-`;
-
 const CaroImage = styled.div`
   background-image: url("/bush.jpg");
   background-size: cover;
@@ -132,6 +127,7 @@ const CaroImage = styled.div`
   text-align: center;
   padding-top: 30%;
   font-weight: Bold;
+  border-radius: 10px;
 `;
 const PricingContainer = styled.div`
   height: 30%;
@@ -154,6 +150,7 @@ const CurrencyContainer = styled.div`
 const Price = styled.div`
   span {
     font-size: 3rem;
+    font-family: "Raleway", sans-serif;
   }
 `;
 
