@@ -63,22 +63,31 @@
     width: 100%;
     background-color: #fff;
 }
+
 .form>input::placeholder {
     color: #909497;
     font-family: "Gilroy Light";
 }
-.form>input[type="submit"] {
+
+.paystackButton {
     background-color: #145a32;
     color: #fff;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.8 ease-in;
     font-family: "Gilroy Light";
+    width: 100%;
+    border:none;
+    padding: 10px 16px;
+    margin-top: 10px;
 }
-.form>input[type="submit"]:hover {
+
+.paystackButton:hover {
     background-color: #f3f3f3;
     color: black;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.8 ease-in;
     font-family: "Gilroy Light";
+    border: 2px solid #145a32
 }
+
 /* GALLERY */
 .wrapper {
     min-height: 50vh;

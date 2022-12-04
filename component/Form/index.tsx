@@ -8,29 +8,39 @@ type PaystackProps = {
   phone: number;
   amount: number;
   publicKey: string;
-  text:string;
-  onSuccess:() => void;
-  onClose:() => void;
-  alert:() => void;
+  text: string;
 };
+
+// Button Props
+type PaystackButtonProps = {
+  email: string,
+  phone:number,
+  amount: number,
+  publicKey:string,
+  onSuccess: () => void;
+  onCancel: () => void;
+  alert: () => void;
+}
 
 const handleForm = (e: any) => {
   e.preventDefault;
 };
 
-const Form: React.FC<PaystackProps> = () => {
-    const publicKey = "pk_test_7aff12d91ec4b92eabed43cc84fe830253f6d7a1"
-//   const amount = 0 * 100
+const Form: React.FC<PaystackProps> = ()=> {
+  const publicKey = "pk_test_7aff12d91ec4b92eabed43cc84fe830253f6d7a1";
+  const amount = 1000000;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [amountPaid, setAmountPaid] = useState("")
 
   const componentProps = {
     email,
+    amount,
     metadata: {
       name,
       phone,
+      email,
     },
     publicKey,
     text: "Pay Now",
@@ -60,13 +70,16 @@ const Form: React.FC<PaystackProps> = () => {
           onChange={(e) => setPhone(e.target.value)}
           placeholder="Phone"
         />
-        <input
+        {/* <input
           type="number"
           value={amountPaid}
           onChange={(e) => setAmountPaid(e.target.value)}
           placeholder="Amount"
+        /> */}
+        <PaystackButton
+          className={TicketStyles.paystackButton}
+          {...componentProps}
         />
-        <input type="submit" {...componentProps}/>
       </form>
     </div>
   );

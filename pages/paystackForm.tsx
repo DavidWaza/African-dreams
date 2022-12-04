@@ -14,15 +14,6 @@ const PaystackForm = () => {
             amount={0}
             publicKey={""}
             text={""}
-            onSuccess={function (): void {
-              throw new Error("Function not implemented.");
-            }}
-            onClose={function (): void {
-              throw new Error("Function not implemented.");
-            }}
-            alert={function (): void {
-              throw new Error("Function not implemented.");
-            }}
           />
         </FormCard>
       </FormLayout>
