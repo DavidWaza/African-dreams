@@ -12,7 +12,7 @@ const BookingCard: React.FC<EventProps> = () => {
     <div>
       <Booking
         eventTitle="Bush Doings"
-        date="December 15th"
+        date="16th - 18th December"
         buttonText="Book Now"
       />
     </div>
