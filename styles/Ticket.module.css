@@ -21,8 +21,6 @@
     background-size: cover;
     background-position: center;
     height: 100vh;
-    position: relative;
-    top: 0;
 }
 
 .eventBanner {
@@ -30,38 +28,62 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
-    top: 0;
 
 }
 
-.bannerHeader {
+.bannerHeader>p:nth-child(1) {
+    padding-top: 20%;
+    color: #fff;
+    font-family: "Gilroy Bold";
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.bannerHeader>p:nth-child(2) {
+    color: #fff;
+    letter-spacing: .30px;
+    font-family: "Gilroy Light";
+    text-align: center;
+    margin-top: -20px;
+}
+
+.booking {
     display: flex;
     justify-content: center;
 }
 
-.bannerHeader>p:nth-child(1) {
-    position: absolute;
-    top: 25%;
-    color: #fff;
-    font-family: "Gilroy Bold";
-    font-size: 2.2rem;
-}
+/* FORM */
 
-.bannerHeader>p:nth-child(2) {
-    position: absolute;
-    top: 35%;
-    color: #fff;
-    letter-spacing: .30px;
+.form>input {
+    display: block;
+    padding: 10px 16px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    border: 2px solid #145a32;
+    width: 100%;
+    background-color: #fff;
+}
+.form>input::placeholder {
+    color: #909497;
     font-family: "Gilroy Light";
 }
-
-.booking {
-    position: absolute;
-    top: 40%;
+.paystackButton {
+    background-color: #145a32;
+    color: #fff;
+    transition: all 0.3 ease-in-out;
+    font-family: "Gilroy Light";
+    border: none;
+    width: 100%;
+    padding: 10px 16px;
+    margin-top: 10px;
 }
+.paystackButton:hover {
+    background-color: #f3f3f3;
+    color: black;
+    transition: all 0.3 ease-in-out;
+    font-family: "Gilroy Light";
 
-
+}
 /* GALLERY */
 .wrapper {
     min-height: 50vh;
@@ -69,15 +91,9 @@
 
 /* MEDIA QUEURIES */
 @media screen and (max-width: 768px) {
-    .bannerHeader>p:nth-child(1) {
-        display: none;
-    }
-    .bannerHeader>p:nth-child(2) {
-        top: 34%;
-    }
 
     .eventBanner {
-        background-image: none;
+        background-image: url("/campout.webp");
     }
 }
 

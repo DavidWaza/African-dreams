@@ -19,7 +19,7 @@ const PriceCard: React.FC<PriceCardProps> = () => {
     <>
       <Container>
         <Row>
-          <Col sm={4}>
+          <Col sm={6} lg={4}>
             <Pricing
               data={[
                 { text: "1 Person Ticket", value: true },
@@ -33,7 +33,7 @@ const PriceCard: React.FC<PriceCardProps> = () => {
               headerText="Bush Doings"
             />
           </Col>
-          <Col sm={4}>
+          <Col sm={6} lg={4}>
             <Pricing
               data={[
                 { text: "2 Person Ticket", value: true },
@@ -47,7 +47,7 @@ const PriceCard: React.FC<PriceCardProps> = () => {
               headerText="Bush Doings"
             />
           </Col>
-          <Col sm={4}>
+          <Col sm={6} lg={4}>
             <Pricing
               data={[
                 { text: "1 Person Ticket", value: true },

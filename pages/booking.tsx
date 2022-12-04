@@ -19,11 +19,13 @@ const BookingShow = () => {
         <div className={TicketStyles.bannerHeader}>
           <p>Bookings/Events</p>
           <p>Join our expenditure</p>
-          <div className={TicketStyles.booking}>
-            <BookingCard eventTitle={""} date={undefined} buttonText={""}  />
-          </div>
+          <div className={TicketStyles.booking}></div>
+        </div>
+        <div className={TicketStyles.booking}>
+          <BookingCard eventTitle={""} date={undefined} buttonText={""} />
         </div>
       </div>
+
       <Subscribe />
     </>
   );

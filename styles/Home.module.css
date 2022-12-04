@@ -381,9 +381,6 @@
 
 
 /* BOOKING CARD */
-.bookingWrapper {
-  margin-top: 20px;
-}
 
 .bookingImage {
   background-image: url('/bush.jpg');
@@ -626,7 +623,9 @@
     width: 100%;
   }
 
-
+  .subscribe {
+    display: none;
+  }
 }
 
 @media only screen and (width: 820px) {

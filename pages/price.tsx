@@ -2,6 +2,7 @@ import React, { Children } from "react";
 import Head from "next/head";
 import TicketStyles from "../styles/Ticket.module.css";
 import PriceCard from "../component/Pricing/PriceCard";
+import { Row, Col } from "react-bootstrap";
 
 type PriceProps = {
   shadow: any;
@@ -20,23 +21,27 @@ const Price: React.FC<PriceProps> = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className={TicketStyles.eventBanner}>
-        <div className={TicketStyles.bannerHeader}>
-          <p>Bookings/Events</p>
-        </div>
-        <div className={TicketStyles.pricingDiv}>
-          <PriceCard
-            text={""}
-            value={false}
-            price={0}
-            duration={""}
-            currency={""}
-            buttonContent={""}
-            subTitle={""}
-            priceText={""}
-            headerText={""}
-          />
-        </div>
+        <Row>
+          <Col>
+            <div className={TicketStyles.bannerHeader}>
+              <p>Bookings/Events</p>
+            </div>
+            <div className={TicketStyles.pricingDiv}></div>
+          </Col>
+        </Row>
+        <PriceCard
+          text={""}
+          value={false}
+          price={0}
+          duration={""}
+          currency={""}
+          buttonContent={""}
+          subTitle={""}
+          priceText={""}
+          headerText={""}
+        />
       </div>
     </>
   );

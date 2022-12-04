@@ -94,11 +94,11 @@ export default Pricing;
 
 const PriceWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
-  margin-top: 80%;
+  margin-top: 10%;
   font-family: "Heebo", sans-serif;
 
   @media screen and (max-width: 970px) {
-    margin-top: 30%;
+    margin-top: 10%;
   }
 `;
 const MainContainer = styled.div`
