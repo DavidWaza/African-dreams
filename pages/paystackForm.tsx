@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Form from "../component/Form";
 
@@ -7,7 +7,23 @@ const PaystackForm = () => {
     <PaystackFormContainer>
       <FormLayout>
         <FormCard>
-          <Form name={""} email={""} phone={0} amount={0} publicKey={""} />
+          <Form
+            name={""}
+            email={""}
+            phone={0}
+            amount={0}
+            publicKey={""}
+            text={""}
+            onSuccess={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+            onClose={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+            alert={function (): void {
+              throw new Error("Function not implemented.");
+            }}
+          />
         </FormCard>
       </FormLayout>
     </PaystackFormContainer>

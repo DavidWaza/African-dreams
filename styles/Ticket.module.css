@@ -67,22 +67,17 @@
     color: #909497;
     font-family: "Gilroy Light";
 }
-.paystackButton {
+.form>input[type="submit"] {
     background-color: #145a32;
     color: #fff;
     transition: all 0.3 ease-in-out;
     font-family: "Gilroy Light";
-    border: none;
-    width: 100%;
-    padding: 10px 16px;
-    margin-top: 10px;
 }
-.paystackButton:hover {
+.form>input[type="submit"]:hover {
     background-color: #f3f3f3;
     color: black;
     transition: all 0.3 ease-in-out;
     font-family: "Gilroy Light";
-
 }
 /* GALLERY */
 .wrapper {
