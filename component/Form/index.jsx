@@ -2,31 +2,34 @@ import React, { useState } from "react";
 import TicketStyles from "../../styles/Ticket.module.css";
 import { PaystackButton } from "react-paystack";
 
-type PaystackProps = {
-  name: string;
-  email: string;
-  phone: number;
-  amount: number;
-  publicKey: string;
-  text: string;
-};
+// type PaystackProps = {
+//   name: string;
+//   email: string;
+//   phone: number;
+//   amount: number;
+//   publicKey: string;
+//   text: string;
+// };
 
-// Button Props
-type PaystackButtonProps = {
-  email: string,
-  phone:number,
-  amount: number,
-  publicKey:string,
-  onSuccess: () => void;
-  onCancel: () => void;
-  alert: () => void;
-}
+// // Button Props
+// type PaystackButtonProps = {
+//   email: string;
+//   phone: number;
+//   amount: number;
+//   publicKey: string;
+//   onSuccess: () => void;
+//   onClose: () => void;
+//   alert: () => void;
+//   children: any;
+//   className: any;
+// };
 
-const handleForm = (e: any) => {
+
+const handleForm = (e) => {
   e.preventDefault;
 };
 
-const Form: React.FC<PaystackProps> = ()=> {
+const Form = () => {
   const publicKey = "pk_test_7aff12d91ec4b92eabed43cc84fe830253f6d7a1";
   const amount = 1000000;
 
@@ -48,7 +51,6 @@ const Form: React.FC<PaystackProps> = ()=> {
       alert("Thanks for doing business with us! Come back soon!!"),
     onClose: () => alert("Wait! You need this oil, don't go!!!!"),
   };
-
   return (
     <div>
       <form onSubmit={handleForm} className={TicketStyles.form}>

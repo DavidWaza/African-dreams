@@ -72,7 +72,7 @@
 .paystackButton {
     background-color: #145a32;
     color: #fff;
-    transition: all 0.8 ease-in;
+    transition: all 1s ease-in;
     font-family: "Gilroy Light";
     width: 100%;
     border:none;
@@ -83,9 +83,9 @@
 .paystackButton:hover {
     background-color: #f3f3f3;
     color: black;
-    transition: all 0.8 ease-in;
+    transition: all 1s ease-in;
     font-family: "Gilroy Light";
-    border: 2px solid #145a32
+    border: 1px solid #145a32
 }
 
 /* GALLERY */

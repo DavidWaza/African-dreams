@@ -7,14 +7,7 @@ const PaystackForm = () => {
     <PaystackFormContainer>
       <FormLayout>
         <FormCard>
-          <Form
-            name={""}
-            email={""}
-            phone={0}
-            amount={0}
-            publicKey={""}
-            text={""}
-          />
+          <Form />
         </FormCard>
       </FormLayout>
     </PaystackFormContainer>
