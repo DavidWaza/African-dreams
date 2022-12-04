@@ -57,27 +57,24 @@ const Form = () => {
         <input
           type="text"
           value={name}
+          id="name"
           onChange={(e) => setName(e.target.value)}
           placeholder="Name"
         />
         <input
           type="text"
           value={email}
+          id="email"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
         />
         <input
-          type="number"
+          type="text"
           value={phone}
+          id="phone"
           onChange={(e) => setPhone(e.target.value)}
           placeholder="Phone"
         />
-        {/* <input
-          type="number"
-          value={amountPaid}
-          onChange={(e) => setAmountPaid(e.target.value)}
-          placeholder="Amount"
-        /> */}
         <PaystackButton
           className={TicketStyles.paystackButton}
           {...componentProps}
