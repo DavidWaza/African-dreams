@@ -29,9 +29,9 @@ const handleForm = (e) => {
   e.preventDefault;
 };
 
-const Form = () => {
+const Form = ({price}) => {
   const publicKey = "pk_test_7aff12d91ec4b92eabed43cc84fe830253f6d7a1";
-  const amount = 1000000;
+  const amount = 10000;
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -49,10 +49,11 @@ const Form = () => {
     text: "Pay Now",
     onSuccess: () =>
       alert("Thanks for doing business with us! Come back soon!!"),
-    onClose: () => alert("Wait! You need this oil, don't go!!!!"),
+    onClose: () => alert("Wait! You need this product!"),
   };
   return (
     <div>
+      <p>{`You selected ${price}`}</p>
       <form onSubmit={handleForm} className={TicketStyles.form}>
         <input
           type="text"

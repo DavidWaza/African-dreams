@@ -1,25 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import Form from "../component/Form";
+import Link from "next/link";
 
-const PaystackForm = () => {
+
+const PaystackForm = ({price}:any) => {
   return (
-    <PaystackFormContainer>
-      <FormLayout>
-        <FormCard>
-          <Form />
-        </FormCard>
-      </FormLayout>
-    </PaystackFormContainer>
+    <FormLayout>
+      <FormCard>
+          <Form price={price} />
+      </FormCard>
+    </FormLayout>
   );
 };
 
 export default PaystackForm;
 
-const PaystackFormContainer = styled.div`
-  background-position: center;
-  background-size: cover;
-`;
 const FormLayout = styled.div`
   display: flex;
   justify-content: center;

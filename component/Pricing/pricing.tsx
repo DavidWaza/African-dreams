@@ -2,6 +2,10 @@ import styled from "styled-components";
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import Link from "next/link";
+import TicketStyles from "../../styles/Ticket.module.css";
+import Form from "../Form";
+import PaystackForm from "../../pages/paystackForm";
 
 type PriceProps = {
   shadow?: any;
@@ -16,6 +20,7 @@ type PriceProps = {
   value?: number;
   text?: string;
   index?: any;
+  onClick: () => void;
 };
 
 const Pricing: React.FC<PriceProps> = ({
@@ -53,7 +58,14 @@ const Pricing: React.FC<PriceProps> = ({
               )}
               {buttonContent && (
                 <ButtonContainer>
-                  <Button>{buttonContent}</Button>
+                  <button
+                    className={TicketStyles.buttonPrice}
+                    onClick={() => {
+                       price ? <PaystackForm /> : "NaN";
+                    }}
+                  >
+                    <Link href="/paystackForm">{buttonContent}</Link>
+                  </button>
                 </ButtonContainer>
               )}
               {data && (
@@ -171,27 +183,6 @@ const ButtonContainer = styled.div`
   align-items: center;
   margin: 2rem 0;
   width: 100%;
-`;
-
-const Button = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  border-radius: 0.3rem;
-  border: 0.1rem solid #b7950b;
-  width: 100%;
-  color: #fff;
-  padding: 0 16px;
-  height: 3.5rem;
-  background-color: transparent;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  &:hover {
-    background-color: #b7950b;
-    color: white;
-  }
 `;
 
 const DataContainer = styled.div`

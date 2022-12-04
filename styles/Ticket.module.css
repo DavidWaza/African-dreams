@@ -75,7 +75,7 @@
     transition: all 1s ease-in;
     font-family: "Gilroy Light";
     width: 100%;
-    border:none;
+    border: none;
     padding: 10px 16px;
     margin-top: 10px;
 }
@@ -86,6 +86,34 @@
     transition: all 1s ease-in;
     font-family: "Gilroy Light";
     border: 1px solid #145a32
+}
+
+/* ButtonPrice */
+.buttonPrice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border-radius: 0.3rem;
+    border: 0.1rem solid #b7950b;
+    width: 100%;
+    color: #fff;
+    padding: 0 16px;
+    height: 3.5rem;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonPrice>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttonPrice:hover {
+    background-color: #b7950b;
+    color: white;
 }
 
 /* GALLERY */
