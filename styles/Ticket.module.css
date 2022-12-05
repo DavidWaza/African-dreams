@@ -76,8 +76,8 @@
     font-family: "Gilroy Light";
     width: 100%;
     border: none;
-    padding: 10px 16px;
     margin-top: 10px;
+    height: 7vh;
 }
 
 .paystackButton:hover {

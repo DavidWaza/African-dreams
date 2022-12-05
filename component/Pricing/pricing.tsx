@@ -61,7 +61,7 @@ const Pricing: React.FC<PriceProps> = ({
                   <button
                     className={TicketStyles.buttonPrice}
                     onClick={() => {
-                       price ? <PaystackForm /> : "NaN";
+                       price ? <PaystackForm price={0} /> : "NaN";
                     }}
                   >
                     <Link href="/paystackForm">{buttonContent}</Link>

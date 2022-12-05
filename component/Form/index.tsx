@@ -2,35 +2,38 @@ import React, { useState } from "react";
 import TicketStyles from "../../styles/Ticket.module.css";
 import { PaystackButton } from "react-paystack";
 
-// type PaystackProps = {
-//   name: string;
-//   email: string;
-//   phone: number;
-//   amount: number;
-//   publicKey: string;
-//   text: string;
-// };
-
-// // Button Props
-// type PaystackButtonProps = {
-//   email: string;
-//   phone: number;
-//   amount: number;
-//   publicKey: string;
-//   onSuccess: () => void;
-//   onClose: () => void;
-//   alert: () => void;
-//   children: any;
-//   className: any;
-// };
-
-
-const handleForm = (e) => {
-  e.preventDefault;
+type PaystackProps = {
+  name: string;
+  email: string;
+  phone: number;
+  amount: number;
+  publicKey: string;
+  text: string;
+  onSubmit: () => void;
+  price:number;
 };
 
-const Form = ({price}) => {
-  const publicKey = "pk_test_7aff12d91ec4b92eabed43cc84fe830253f6d7a1";
+// Button Props
+type PaystackButtonProps = {
+  email: string;
+  phone: number;
+  amount: number;
+  publicKey: string;
+  onSuccess: () => void;
+  onClose: () => void;
+  alert: () => void;
+  children: any;
+  className: any;
+  metadata: Record<string, any>
+};
+
+
+const handleForm = (e:any) => {
+  e.preventDefault();
+};
+
+const Form:React.FC<PaystackProps> = ({price}) => {
+  const publicKey = "pk_test_faccaa1b758f1c8e0b3327df6e141d96899b78f6";
   const amount = 10000;
 
   const [name, setName] = useState("");
@@ -44,6 +47,7 @@ const Form = ({price}) => {
       name,
       phone,
       email,
+      custom_fields:[]
     },
     publicKey,
     text: "Pay Now",
@@ -79,6 +83,13 @@ const Form = ({price}) => {
         <PaystackButton
           className={TicketStyles.paystackButton}
           {...componentProps}
+          email=""
+          phone=""
+          amount={0}
+          publicKey=""
+          text="Pay Now"
+          onSuccess={() => console.log("")}
+          onClose={() => console.log('')}
         />
       </form>
     </div>

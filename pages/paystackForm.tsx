@@ -3,12 +3,26 @@ import styled from "styled-components";
 import Form from "../component/Form";
 import Link from "next/link";
 
+type paystackProps = {
+  price: number;
+};
 
-const PaystackForm = ({price}:any) => {
+const PaystackForm: React.FC<paystackProps> = ({ price }) => {
   return (
     <FormLayout>
       <FormCard>
-          <Form price={price} />
+        <Form
+          price={price}
+          name={""}
+          email={""}
+          phone={0}
+          amount={0}
+          publicKey={""}
+          text={""}
+          onSubmit={function (): void {
+            throw new Error("Function not implemented.");
+          }}
+        />
       </FormCard>
     </FormLayout>
   );
