@@ -12,12 +12,12 @@ export const Icons: any[] = [
   {
     id: 3,
     icon: "/Vector (2).png",
-    url: "africanDream.com",
+    url: "https://www.instagram.com/africandream_ng/",
   },
   {
     id: 4,
     icon: "/Vector (3).png",
-    url: "facebook.com/african-dreams",
+    url: "https://web.facebook.com/africandreamnig",
   },
   {
     id: 5,

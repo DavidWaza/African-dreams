@@ -115,37 +115,42 @@
 /* HEROBANNER */
 .herobanner {
   background-image: url('https://res.cloudinary.com/ddwkojhaj/image/upload/q_auto,f_auto/v1669310566/pexels-cliford-mervil-2398220_1_rb4qgx.jpg');
-  min-height: 90vh;
+  height: 90vh;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-content: center;
 }
 
 .header>p:nth-child(1) {
   color: #fff;
-  position: absolute;
   font-family: "Gilroy Bold";
   font-size: 3rem;
-  top: 15%;
   line-height: 85.79px;
+  padding-top: 50%;
+  text-transform: uppercase;
 }
 
 .header>p:nth-child(2) {
-  position: absolute;
-  top: 25%;
   font-family: "Gilroy Light";
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   color: #fff;
   letter-spacing: .25px;
+  margin-top: -20px;
+  font-weight: bold;
 }
 
 /* BUTTON */
+.heroButton {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   border: 3px solid #fff;
   border-radius: 10px;
@@ -164,6 +169,11 @@
   white-space: nowrap;
   transform: translateZ(0) scale(1);
   transition: transform .2s;
+  width: 50%;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.98px;
 
 }
 
@@ -199,11 +209,6 @@
 
 .button:not(:disabled):active {
   transform: translateY(.125rem);
-}
-
-.heroButton {
-  position: absolute;
-  top: 60%;
 }
 
 .socialIcons {
@@ -507,7 +512,7 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .smallNav {
     display: none;
   }
@@ -558,14 +563,21 @@
     display: none;
   }
 
+  .herobanner {
+    height: 63vh;
+    padding: 0px;
+    margin: 0px
+  }
+
   .header>p:nth-child(1) {
-    top: 20%;
-    font-size: 35px;
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: -10%;
   }
 
   .header>p:nth-child(2) {
-    top: 35%;
-    font-size: 15px;
+    font-size: 1em;
+    text-align: center;
   }
 
   .exploreTitle>p:nth-child(1) {
@@ -629,27 +641,13 @@
 }
 
 @media only screen and (width: 820px) {
-  .header>p:nth-child(1) {
-    top: 22%;
-    font-size: 3rem;
-  }
-
-  .header>p:nth-child(2) {
-    top: 38%;
-    font-size: 15px;
-  }
-
-  .heroButton {
-    position: absolute;
-    top: 55%;
-  }
 
   .button {
     font-weight: bold;
   }
 
   .herobanner {
-    min-height: 65vh;
+    height: 50vh;
   }
 
   .Carousel {
@@ -659,27 +657,14 @@
 }
 
 @media only screen and (width: 912px) {
-  .header>p:nth-child(1) {
-    top: 22%;
-    font-size: 3rem;
-  }
 
-  .header>p:nth-child(2) {
-    top: 38%;
-    font-size: 15px;
-  }
-
-  .heroButton {
-    position: absolute;
-    top: 55%;
-  }
 
   .button {
     font-weight: bold;
   }
 
   .herobanner {
-    min-height: 65vh;
+    height: 50vh;
   }
 
   .Carousel {

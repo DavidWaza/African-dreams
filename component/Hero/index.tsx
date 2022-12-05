@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import styles from "../../styles/Home.module.css";
 import Button from "../Button/button";
@@ -24,7 +25,7 @@ const Herobanner = () => {
           {Icons.map(({ id, icon, url }) => (
             <div className={styles.iconWrapper} key={id}>
               <Link href={url}>
-                <Image src={icon} alt="vector" width={15} height={15} />
+                <Image src={icon} alt="vector" width={20} height={20} />
               </Link>
             </div>
           ))}
