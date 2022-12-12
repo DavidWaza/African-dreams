@@ -4,7 +4,6 @@ import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import Link from "next/link";
 import TicketStyles from "../../styles/Ticket.module.css";
-import Form from "../Form";
 import PaystackForm from "../../pages/paystackForm";
 
 type PriceProps = {
@@ -61,7 +60,7 @@ const Pricing: React.FC<PriceProps> = ({
                   <button
                     className={TicketStyles.buttonPrice}
                     onClick={() => {
-                       price ? <PaystackForm price={0} /> : "NaN";
+                       price ? <PaystackForm price={price} /> : "NaN";
                     }}
                   >
                     <Link href="/paystackForm">{buttonContent}</Link>

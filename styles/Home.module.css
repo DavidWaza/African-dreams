@@ -169,7 +169,7 @@
   white-space: nowrap;
   transform: translateZ(0) scale(1);
   transition: transform .2s;
-  width: 50%;
+  width: 30%;
   margin-top: 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -245,18 +245,19 @@
 .exploreTitle>p:nth-child(1) {
   margin-top: 15%;
   color: #eee;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: "Gilroy Bold";
-  width: 250px;
+  width: 350px;
   letter-spacing: .45px;
 }
 
 .exploreTitle>p:nth-child(2) {
-  line-height: 20px;
+  font-family: "Gilroy Light";
+  line-height: 30px;
   color: #eee;
-  width: 300px;
-  font-size: 15px;
+  font-size: 1.2em;
   margin-bottom: 10%;
+  letter-spacing: 0.044em;
 }
 
 /* LOCATION */
@@ -268,6 +269,7 @@
   padding-top: 10%;
   padding-bottom: 5%;
 }
+
 
 .location {
   position: relative;
@@ -297,12 +299,12 @@
 }
 
 .image {
-  filter: brightness(50%);
+  filter: brightness(100%);
   transition: all 1s ease;
 }
 
 .image:hover {
-  filter: brightness(100%);
+  filter: brightness(50%);
 }
 
 /* SUBSCRIBE */
@@ -587,9 +589,10 @@
   }
 
   .exploreTitle>p:nth-child(2) {
-    font-size: 14px;
+    font-size: 18px;
     width: 100%;
     text-align: center;
+    padding: 0px 20px;
   }
 
   .exploreButton {

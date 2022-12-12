@@ -25,7 +25,7 @@ const Herobanner = () => {
           {Icons.map(({ id, icon, url }) => (
             <div className={styles.iconWrapper} key={id}>
               <Link href={url}>
-                <Image src={icon} alt="vector" width={20} height={20} />
+                <Image src={icon} alt="vector" width={18} height={20} />
               </Link>
             </div>
           ))}
