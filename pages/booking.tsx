@@ -8,7 +8,7 @@ const BookingShow = () => {
   return (
     <>
       <Head>
-        <title>AD | Ticket</title>
+        <title>AD|Ticket</title>
         <meta
           name="description"
           content="Hiking, Mountain, fun, climb, extra activity, activities, parties, tickets"

@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import Form from "../component/Form";
-import Link from "next/link";
 
 type paystackProps = {
   price: number;
@@ -10,7 +9,7 @@ type paystackProps = {
 export  const getServerSideProps= (context: { query: { price: number; }; })=> {
   return {
       props: {
-         price: context.query.price //pass it to the page props
+         price: context.query.price
       }
   }
 }

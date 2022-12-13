@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>AD | Home</title>
+        <title>AD|Home</title>
         <meta
           name="description"
           content="Hiking, Mountain, fun, climb, extra activity, activities, parties"
