@@ -98,3 +98,45 @@ export const BookingArr: any[] = [
     price: "N5,000/p",
   },
 ];
+
+export const PricingArr = [
+  {
+    id: 1,
+    firstText: "1 Person Ticket",
+    firstValue: true,
+    secondText: "1 Tent Accomodation",
+    secondValue: true,
+    Price: 1200000,
+    duration: "p",
+    currency: "N",
+    buttonContent: "Buy Now",
+    subTitle: "Single Camping Pass",
+    headerText: "Bush Doings",
+  },
+  {
+    id: 2,
+    firstText: "2 Person Tickets",
+    firstValue: false,
+    secondText: "1 Tent Accomodation",
+    secondValue: true,
+    Price: 1750000,
+    duration: "p",
+    currency: "N",
+    buttonContent: "Buy Now",
+    subTitle: "Couple Camping Pass",
+    headerText: "Bush Doings",
+  },
+  {
+    id: 3,
+    firstText: "1 Person Tickets",
+    firstValue: false,
+    secondText: "1 Tent Accomodation",
+    secondValue: false,
+    Price: 3600000,
+    duration: "p",
+    currency: "N",
+    buttonContent: "Buy Now",
+    subTitle: "Gang Camping Pass",
+    headerText: "Bush Doings",
+  }
+]
