@@ -42,7 +42,7 @@ const Pricing: React.FC<PriceProps> = ({
                   <span>{currency}</span>
                 </CurrencyContainer>
                 <Price>
-                  <span>{price}</span>
+                  <span>{price/100}</span>
                 </Price>
                 {price > 0 && (
                   <Duration>
@@ -57,14 +57,14 @@ const Pricing: React.FC<PriceProps> = ({
               )}
               {buttonContent && (
                 <ButtonContainer>
-                  <button
+                  <div
                     className={TicketStyles.buttonPrice}
-                    onClick={() => {
-                       price ? <PaystackForm price={price} /> : "NaN";
-                    }}
                   >
-                    <Link href="/paystackForm">{buttonContent}</Link>
-                  </button>
+                    <Link href={{
+                      pathname: "/paystackForm",
+                      query: { price: price },
+                    }}>{buttonContent}</Link>
+                  </div>
                 </ButtonContainer>
               )}
               {data && (

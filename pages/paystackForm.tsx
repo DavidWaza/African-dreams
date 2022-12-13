@@ -7,16 +7,23 @@ type paystackProps = {
   price: number;
 };
 
+export  const getServerSideProps= (context: { query: { price: number; }; })=> {
+  return {
+      props: {
+         price: context.query.price //pass it to the page props
+      }
+  }
+}
+
 const PaystackForm: React.FC<paystackProps> = ({ price }) => {
   return (
     <FormLayout>
       <FormCard>
         <Form
-          price={price}
           name={""}
           email={""}
           phone={0}
-          amount={0}
+          amount={price}
           publicKey={""}
           text={""}
           onSubmit={function (): void {

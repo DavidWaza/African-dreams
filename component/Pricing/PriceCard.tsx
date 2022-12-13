@@ -26,7 +26,7 @@ const PriceCard: React.FC<PriceCardProps> = () => {
                 { text: "1 Person Ticket", value: true },
                 { text: "1 Tent Accomodation", value: false },
               ]}
-              price={12000}
+              price={1200000}
               duration="p"
               currency="N"
               buttonContent="Buy Now"
@@ -43,7 +43,7 @@ const PriceCard: React.FC<PriceCardProps> = () => {
                 { text: "2 Person Ticket", value: true },
                 { text: "1 Tent Accomodation", value: true },
               ]}
-              price={17500}
+              price={1750000}
               duration="p"
               currency="N"
               buttonContent="Buy Now"
@@ -60,7 +60,7 @@ const PriceCard: React.FC<PriceCardProps> = () => {
                 { text: "1 Person Ticket", value: true },
                 { text: " Tent Accomodation", value: true },
               ]}
-              price={36000}
+              price={3600000}
               duration="p"
               currency="N"
               buttonContent="Buy Now"

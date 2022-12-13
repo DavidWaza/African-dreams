@@ -10,7 +10,6 @@ type PaystackProps = {
   publicKey: string;
   text: string;
   onSubmit: () => void;
-  price:number;
 };
 
 // Button Props
@@ -32,9 +31,8 @@ const handleForm = (e:any) => {
   e.preventDefault();
 };
 
-const Form:React.FC<PaystackProps> = ({price}) => {
+const Form:React.FC<PaystackProps> = ({amount}) => {
   const publicKey = "pk_test_faccaa1b758f1c8e0b3327df6e141d96899b78f6";
-  const amount = 10000;
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -57,7 +55,7 @@ const Form:React.FC<PaystackProps> = ({price}) => {
   };
   return (
     <div>
-      <p>{`You selected ${price}`}</p>
+      <p>{`You selected ${amount}`}</p>
       <form onSubmit={handleForm} className={TicketStyles.form}>
         <input
           type="text"
@@ -83,10 +81,7 @@ const Form:React.FC<PaystackProps> = ({price}) => {
         <PaystackButton
           className={TicketStyles.paystackButton}
           {...componentProps}
-          email=""
-          phone=""
-          amount={0}
-          publicKey=""
+          amount={amount}
           text="Pay Now"
           onSuccess={() => console.log("")}
           onClose={() => console.log('')}
