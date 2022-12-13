@@ -41,10 +41,6 @@ const Price: React.FC<PriceProps> = () => {
           subTitle={""}
           priceText={""}
           headerText={""}
-          firstText={""}
-          secondText={""}
-          firstValue={false}
-          secondValue={false}
         />
       </div>
     </>
