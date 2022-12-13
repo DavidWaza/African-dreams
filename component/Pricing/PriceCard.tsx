@@ -12,7 +12,6 @@ type PriceCardProps = {
   subTitle: string;
   priceText: string;
   headerText: string;
-  onClick: () => void;
 };
 
 const PriceCard: React.FC<PriceCardProps> = () => {
@@ -32,9 +31,6 @@ const PriceCard: React.FC<PriceCardProps> = () => {
               buttonContent="Buy Now"
               subTitle="Single Camping Pass"
               headerText="Bush Doings"
-              onClick={function (): void {
-                throw new Error("Function not implemented.");
-              }}
             />
           </Col>
           <Col sm={6} lg={4}>
@@ -49,9 +45,6 @@ const PriceCard: React.FC<PriceCardProps> = () => {
               buttonContent="Buy Now"
               subTitle="Couple Camping Pass"
               headerText="Bush Doings"
-              onClick={function (): void {
-                throw new Error("Function not implemented.");
-              }}
             />
           </Col>
           <Col sm={6} lg={4}>
@@ -66,9 +59,6 @@ const PriceCard: React.FC<PriceCardProps> = () => {
               buttonContent="Buy Now"
               subTitle="Gang Camping Pass"
               headerText="Bush Doings"
-              onClick={function (): void {
-                throw new Error("Function not implemented.");
-              }}
             />
           </Col>
         </Row>

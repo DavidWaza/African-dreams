@@ -4,7 +4,6 @@ import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import Link from "next/link";
 import TicketStyles from "../../styles/Ticket.module.css";
-import PaystackForm from "../../pages/paystackForm";
 
 type PriceProps = {
   shadow?: any;
@@ -19,7 +18,6 @@ type PriceProps = {
   value?: number;
   text?: string;
   index?: any;
-  onClick: () => void;
 };
 
 const Pricing: React.FC<PriceProps> = ({
@@ -117,7 +115,7 @@ const MainContainer = styled.div`
   min-height: 20rem;
   border-radius: 10px;
   font-weight: 500;
-  background: #145a32;
+  background-color: #043927;
   color: #fff;
   opacity: 1;
   box-shadow: 0 8px 14px -6px;

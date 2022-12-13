@@ -23,11 +23,9 @@ const Booking: React.FC<bookingProps> = ({ eventTitle, date, buttonText }) => {
                 <h3>{eventTitle}</h3>
                 <h5>{date}</h5>
                 <ButtonContainer>
-                  <Button>
                     <Link href="/price">
                       <StyledLink>{buttonText}</StyledLink>
                     </Link>
-                  </Button>
                 </ButtonContainer>
               </BookingContent>
             </Col>
@@ -65,8 +63,6 @@ const BookingContent = styled.div`
 const ButtonContainer = styled.div`
   margin: 2rem 0;
   width: 100%;
-`;
-const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,11 +87,11 @@ const Button = styled.button`
     width: 100%;
   }
 `;
+
 const StyledLink = styled.a`
   color: #fff;
-  text-decoration: none;
+  text-decoration:none;
   &:hover {
     color: #fff;
-    text-decoaration: none;
   }
 `;
