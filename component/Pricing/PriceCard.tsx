@@ -4,10 +4,10 @@ import { Container, Col, Row } from "react-bootstrap";
 import { PricingArr } from "../IconArr";
 
 type PriceCardProps = {
-  firstText: string;
-  secondText: string;
-  firstValue: boolean;
-  secondValue: boolean;
+  firstText?: string;
+  secondText?: string;
+  firstValue?: boolean;
+  secondValue?: boolean;
   text: string;
   value: false;
   price: number;

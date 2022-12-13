@@ -40,7 +40,12 @@ const Price: React.FC<PriceProps> = () => {
           buttonContent={""}
           subTitle={""}
           priceText={""}
-          headerText={""} />
+          headerText={""}
+          firstText={""}
+          secondText={""}
+          firstValue={false}
+          secondValue={false}
+        />
       </div>
     </>
   );

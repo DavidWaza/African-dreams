@@ -82,22 +82,6 @@ export const FooterArr: any[] = [
     slugFour: "Enter a Lottery",
   },
 ];
-export const BookingArr: any[] = [
-  {
-    id: 1,
-    img: "/2.png",
-    title: "Abuja Camping weekend",
-    slug: " Abuja camping weekend takes place on the 30th of November 2022, this is a good free time for adults/youths to come socialize and network.",
-    price: "N20,000/p",
-  },
-  {
-    id: 2,
-    img: "/1.png",
-    title: "Night breakers",
-    slug: " Night breakers will encompass camping,  movies, games and all night party at the brooks garden event centre Abuja on the 30th of November 2022.",
-    price: "N5,000/p",
-  },
-];
 
 export const PricingArr = [
   {
