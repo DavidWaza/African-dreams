@@ -28,6 +28,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-bottom: 30px;
 
 }
 
@@ -128,7 +129,6 @@
     }
     .eventBanner {
         background-image: url("/campout.webp");
-        height: 100vh;
     }
 }
 
