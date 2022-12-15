@@ -69,7 +69,7 @@ const BookingContent = styled.div`
 `;
 const ImgContainer = styled.div`
   background-image: url("/bush.jpg");
-  background-position: 0px -40px;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
