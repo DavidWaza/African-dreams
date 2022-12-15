@@ -11,7 +11,7 @@ type PaystackProps = {
   text: string;
   onSubmit: () => void;
 };
-
+  
 // Button Props
 type PaystackButtonProps = {
   email: string;
@@ -27,11 +27,11 @@ type PaystackButtonProps = {
 };
 
 
-const handleForm = (e:any) => {
+const handleForm = (e: any) => {
   e.preventDefault();
 };
 
-const Form:React.FC<PaystackProps> = ({amount}) => {
+const Form: React.FC<PaystackProps> = ({ amount }) => {
   const publicKey = "pk_test_faccaa1b758f1c8e0b3327df6e141d96899b78f6";
 
   const [name, setName] = useState("");
@@ -45,7 +45,7 @@ const Form:React.FC<PaystackProps> = ({amount}) => {
       name,
       phone,
       email,
-      custom_fields:[]
+      custom_fields: []
     },
     publicKey,
     text: "Pay Now",

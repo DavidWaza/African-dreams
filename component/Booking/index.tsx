@@ -57,7 +57,7 @@ const BookingContainer = styled.div`
   opacity: 0.9;
   width: 50vh;
   padding: 10px 16px;
-  border-radius:10px;
+  border-radius: 10px;
 
   @media screen and (max-width: 980px) {
     width: 100%;
@@ -65,7 +65,7 @@ const BookingContainer = styled.div`
 `;
 
 const BookingContent = styled.div`
-  padding: 5px 10px; 
+  padding: 5px 10px;
 `;
 const ImgContainer = styled.div`
   background-image: url("/bush.jpg");
@@ -76,14 +76,12 @@ const ImgContainer = styled.div`
   height: 30vh;
   border-radius: 10px;
 `;
-const EventTitle = styled.div`
-  text-align: justify;
-  margin-top: 20px;
 
+const EventTitle = styled.h3`
+  margin-top: 30px;
 
   @media screen and (max-width: 768px) {
-    margin-top: -10px;
-    text-align:center;
+    text-align: center;
   }
 `;
 const EventDuration = styled.div`
@@ -137,7 +135,7 @@ const ButtonContainer = styled.div`
 
 const AnchorTag = styled.a`
   color: #fff;
-  text-decoration:none !important;
+  text-decoration: none !important;
   font-family: "Heebo", sans-serif;
 
   &:hover {
