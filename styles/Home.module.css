@@ -22,17 +22,25 @@
 
 /* NAVBAR */
 .navigation {
-  height: 80px;
+  height: 6rem;
   width: 100%;
   display: flex;
   flex: 1;
   align-items: center;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 0px;
   padding: 0.5rem 0rem;
   background-color: transparent;
-  color: black;
+    color: black;
   z-index: 1;
+  transition-property: all; 
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+
+}
+.navigation.down {
+  top: -6rem;
+  background-color: #CF5B3E;
 }
 
 .brandName {
@@ -169,7 +177,6 @@
   white-space: nowrap;
   transform: translateZ(0) scale(1);
   transition: transform .2s;
-  width: 30%;
   margin-top: 20px;
   text-transform: uppercase;
   font-weight: bold;

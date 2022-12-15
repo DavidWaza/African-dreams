@@ -115,7 +115,7 @@ const MainContainer = styled.div`
   min-height: 20rem;
   border-radius: 10px;
   font-weight: 500;
-  background-color: #043927;
+  background-color:#082313;
   color: #fff;
   opacity: 1;
   box-shadow: 0 8px 14px -6px;

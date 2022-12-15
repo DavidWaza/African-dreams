@@ -21,7 +21,7 @@ const BookingShow = () => {
           <p>Join our expenditure</p>
         </div>
         <div className={TicketStyles.booking}>
-          <BookingCard eventTitle={""} date={undefined} buttonText={""} />
+          <BookingCard eventTitle={""} date={undefined} buttonText={""} location={""} />
         </div>
       </div>
       <Subscribe />

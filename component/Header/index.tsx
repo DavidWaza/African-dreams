@@ -1,12 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Link from "next/link";
 import styles from "../../styles/Home.module.css";
+import useScrollDirection from "../scrollDirection/scrollDirection"
 
 const Navbar: any = () => {
   const [isNavExpanded, setIsNavExpanded] = useState<any>(false);
+
+  const scrollDirection = useScrollDirection()
+
+
   return (
     <>
-      <nav className={styles.navigation}>
+      <nav className={`${styles.navigation} ${scrollDirection === "down" ? "hide" : "show"}`}>
         <Link href="/" className={styles.brandName}>
           <p>African Dream Network</p>
         </Link>

@@ -124,3 +124,26 @@ export const PricingArr = [
     headerText: "Bush Doings",
   }
 ]
+
+export const QuickLinks = [
+  {
+    id:1,
+    Link:"/favorite.png",
+    text: 'About Us'
+  },
+  {
+    id:2,
+    Link: "/binoculars.png",
+    text:"ADC Vision"
+  },
+  {
+    id:3,
+    Link: "/member.png",
+    text: "Membership"
+  },
+  {
+    id:4,
+    Link:"/podium.png",
+    text:"Partnership"
+  }
+]
