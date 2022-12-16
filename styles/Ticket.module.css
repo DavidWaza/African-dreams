@@ -78,7 +78,7 @@
     width: 100%;
     border: none;
     margin-top: 10px;
-    padding:10px 20px;
+    padding: 10px 20px;
 }
 
 .paystackButton:hover {
@@ -118,15 +118,13 @@
 }
 
 /* GALLERY */
-.wrapper {
-    min-height: 50vh;
-}
 
 /* MEDIA QUEURIES */
 @media screen and (max-width: 768px) {
     .banner {
         height: 100vh;
     }
+
     .eventBanner {
         background-image: url("/campout.webp");
     }
@@ -136,6 +134,7 @@
     .banner {
         height: 90vh;
     }
+
     .bannerHeader>p:nth-child(2) {
         top: 30%;
     }
@@ -145,6 +144,7 @@
     .banner {
         height: 90vh;
     }
+
     .bannerHeader>p:nth-child(2) {
         top: 30%;
     }

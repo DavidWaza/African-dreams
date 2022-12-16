@@ -17,7 +17,7 @@ const Subscribe = () => {
                   <Col sm={6}>
                     <div className={styles.campContent}>
                       <p>Let's stay in Touch</p>
-                      <p>Keep updated with our travel plans and adventures.</p>
+                      <p>Keep updated with our travel <br />plans and adventures.</p>
                       <form className={styles.formContainer}>
                         <input type="text" />
                         <div className={styles.iconSendContainer}>
@@ -43,8 +43,7 @@ const Subscribe = () => {
                         src="/camp.png"
                         layout="fill"
                         alt="alt"
-                        objectFit="contain"
-                        objectPosition="center"
+                        objectFit="none"
                       />
                     </div>
                   </Col>
