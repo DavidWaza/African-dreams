@@ -31,13 +31,14 @@
   top: 0px;
   padding: 0.5rem 0rem;
   background-color: transparent;
-    color: black;
+  color: black;
   z-index: 1;
-  transition-property: all; 
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
 
 }
+
 .navigation.down {
   top: -6rem;
   background-color: #CF5B3E;
@@ -314,6 +315,46 @@
   filter: brightness(50%);
 }
 
+/* LOCATION-MOBILE */
+.mobileView {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  width: 100%;
+  margin: 64px;
+  margin-left: 0;
+  margin-right: 0;
+  list-style: none;
+}
+
+.mobileView .locationGrid {
+  padding: 0px;
+  overflow: auto;
+}
+
+.locationGrid {
+  display: block;
+  position: relative;
+  width: 100%;
+  float: left;
+
+}
+.locationMobile {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 0;
+  -webkit-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+.imageMobile {
+  scroll-snap-align: center;
+  padding: 1em;
+}
+
 /* SUBSCRIBE */
 .subscribe {
   margin-top: 10%;
@@ -576,13 +617,15 @@
     padding: 0px;
     margin: 0px
   }
+
   .exploreWrapper>.image:nth-child(2) {
-    padding:0px 20px
+    padding: 0px 20px
   }
-  
+
   .exploreWrapper>.image:nth-child(3) {
     padding: 0px 20px;
   }
+
   .header>p:nth-child(1) {
     font-size: 1.8em;
     text-align: center;
@@ -606,9 +649,11 @@
     text-align: center;
     padding: 0px 20px;
   }
-  .locationTitle>p{
-    font-size:35px;
+
+  .locationTitle>p {
+    font-size: 35px;
   }
+
   .exploreButton {
     display: flex;
     justify-content: center;
@@ -668,10 +713,12 @@
     width: 100%;
     padding: 0px 20px;
   }
+
   .imgContainer {
     height: 200px;
     width: 200pxS;
   }
+
   .campContent>p:nth-child(1) {
     font-size: 1.2em;
   }
@@ -697,10 +744,12 @@
     width: 100%;
     padding: 0px 20px;
   }
+
   .imgContainer {
     height: 200px;
     width: 200pxS;
   }
+
   .campContent>p:nth-child(1) {
     font-size: 1.2em;
   }

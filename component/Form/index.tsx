@@ -55,7 +55,6 @@ const Form: React.FC<PaystackProps> = ({ amount }) => {
   };
   return (
     <div>
-      <p>{`You selected ${amount}`}</p>
       <form onSubmit={handleForm} className={TicketStyles.form}>
         <input
           type="text"
@@ -83,7 +82,7 @@ const Form: React.FC<PaystackProps> = ({ amount }) => {
           {...componentProps}
           amount={amount}
           text="Pay Now"
-          onSuccess={() => console.log("")}
+          onSuccess={() => console.log('')}
           onClose={() => console.log('')}
         />
       </form>
