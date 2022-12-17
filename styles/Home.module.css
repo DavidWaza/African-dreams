@@ -232,8 +232,12 @@
   padding: 13px 18px;
   margin-top: 20px;
   border-radius: 50%;
+  transition: all .3s ease-in-out;
 }
-
+.iconWrapper:hover {
+  transform:scale(0.9);
+  transition: all .3s ease-in-out;
+}
 /* EXPLORE MODULE */
 .exploreWrapper {
   margin-top: 15%;
