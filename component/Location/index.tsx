@@ -4,7 +4,7 @@ import Image from "next/image";
 import styles from "../../styles/Home.module.css";
 import { Locations } from "../IconArr";
 import Button from "../Button/button";
-
+import Scroll from "../ReactScroll/Scroll";
 
 type LocationType = {
   className: any;
@@ -46,6 +46,9 @@ const Location: React.FC<LocationType> = () => {
             <Button title="Join Us" />
           </div>
         </Row>
+        <div className={styles.LocationMobileView}>
+          <Scroll />
+        </div>
       </Container>
     </>
   );
