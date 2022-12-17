@@ -33,11 +33,12 @@
 }
 
 .bannerHeader>p:nth-child(1) {
-    padding-top: 20%;
+    padding-top: 10%;
     color: #fff;
     font-family: "Gilroy Bold";
     font-size: 2.2rem;
     text-align: center;
+    letter-spacing: 0.093rem;
 }
 
 .bannerHeader>p:nth-child(2) {
@@ -117,7 +118,8 @@
     color: white;
 }
 
-/* GALLERY */
+
+
 
 /* MEDIA QUEURIES */
 @media screen and (max-width: 768px) {

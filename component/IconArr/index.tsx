@@ -2,12 +2,12 @@ export const Icons: any[] = [
   {
     id: 1,
     icon: "/Vector.png",
-    url: "",
+    url: "tel: +2347040538528",
   },
   {
     id: 2,
     icon: "/Vector (1).png",
-    url: "mailto:africandream@gmail.com",
+    url: "mailto:dreamafricanng@gmail.com",
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ export const Icons: any[] = [
   {
     id: 5,
     icon: "/Vector (4).png",
-    url: "twitter.userAfricandream.com",
+    url: "twitter.com/africandream_ng",
   },
 ];
 export const Locations: any[] = [

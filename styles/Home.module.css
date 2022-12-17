@@ -32,7 +32,7 @@
   padding: 0.5rem 0rem;
   background-color:#c27662;
   color: black;
-  z-index: 1;
+  z-index: 100;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
@@ -328,7 +328,7 @@
 }
 
 .LocationMobileView {
-  /* display: none; */
+  display: none;
 }
 
 /* SUBSCRIBE */
