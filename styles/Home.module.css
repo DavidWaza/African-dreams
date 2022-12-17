@@ -30,7 +30,7 @@
   position: sticky;
   top: 0px;
   padding: 0.5rem 0rem;
-  background-color: transparent;
+  background-color:#F8E1DB;
   color: black;
   z-index: 1;
   transition-property: all;
@@ -46,7 +46,7 @@
 
 .brandName {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   margin-left: 1rem;
 }
 
@@ -76,7 +76,7 @@
   text-decoration: none;
   display: block;
   width: 100%;
-  color: #fff;
+  color: #000;
   position: relative;
   opacity: 0.75px;
 }

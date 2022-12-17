@@ -16,7 +16,7 @@ const CarouselSlide: any = () => {
               <p className={styles.carouselLink}>See more</p>
             </Link>
           </div>
-        </Carousel.Item>
+        </Carousel.Item> 
       </Carousel>
 
       {/* Second Slide */}

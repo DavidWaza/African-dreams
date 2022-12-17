@@ -15,12 +15,10 @@ const gallery = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={TicketStyles.wrapper}>
         <div className={TicketStyles.bannerHeader}>
           <p>Gallery</p>
-          <p>Join our expenditure</p>
+          <p>Enjoy our expenditure</p>
         </div>
-      </div>
       <div className={TicketStyles.carouselContainer}>
         <CarouselSlide />
       </div>
