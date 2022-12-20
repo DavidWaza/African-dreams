@@ -18,7 +18,7 @@ const Subscribe = () => {
               transition={{
                 delay: 0.8,
                 duration: 1,
-                ease: [0, 0.71, 0.2, 1.0],
+                ease: [0.9, 0.71, 0.7, 1.01],
               }}
               className={styles.subscribe}
             >

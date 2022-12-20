@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+.HeroText {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.HeroText>p {
+    color: #f3f3f3;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
 
 .textContent {
     font-family: 'Heebo', sans-serif;
@@ -8,4 +22,116 @@
     justify-content: center;
     color: #f3f3f3;
     margin-top: 5px;
+    text-align: center;
+
+
+}
+
+.QuickLink {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.quicklinkText {
+    text-align: center;
+    color: #f3f3f3;
+    font-family: 'Heebo', sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: #c27662;
+}
+
+.QuickLinkImage {
+    display: flex;
+    margin: auto;
+}
+
+.sectionDiv {
+    margin-top: 10%;
+}
+.aboutContent {
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.aboutText>p:nth-child(1) {
+    color: #f3f3f3;
+    font-weight: 500;
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+}
+.aboutText>p:nth-child(2) {
+    color: #f3f3f3;
+    font-weight: 200;
+    font-size: 1.3em;
+    font-family: 'Heebo', sans-serif;
+}
+.aboutText>p:nth-child(2) span {
+    color: #c27662;
+}
+.aboutImageCarousel {
+    background-image: url('/bushdoings.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    border-radius: 30px;
+}
+.visionImageCarousel {
+    background-image: url('/babe.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    border-radius: 30px;
+}
+
+/* TEAM/MEMBERSHIP */
+.TeamTitle {
+    display: flex;
+    justify-content: center;
+}
+.TeamTitle>p {
+    color: #f3f3f3;
+    font-size: 2em;
+    font-weight: 300;
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 10%;
+}
+.roundedImage {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.teamName {
+    color: #f3f3f3;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Heebo", sans-serif;
+    font-size: 2em;
+}
+.teamPosition {
+    color: #c27662;
+    text-align: center;
+    margin-top: 4%;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.5em;
+}
+.socialHandles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 768px) {
+
+    .aboutText>p:nth-child(1) {
+        text-align: center;
+    }
+    .aboutText>p:nth-child(2) {
+        text-align: center;
+    }
+    .AboutPng {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
 }

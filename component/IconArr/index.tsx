@@ -128,22 +128,81 @@ export const PricingArr = [
 export const QuickLinks = [
   {
     id:1,
-    Link:"/favorite.png",
-    text: 'About Us'
+    img:"/favorite.png",
+    text: 'About Us',
+    Link: '#About'
   },
   {
     id:2,
-    Link: "/binoculars.png",
-    text:"ADC Vision"
+    img: "/binoculars.png",
+    text:"ADC Vision",
+    Link: "#ADC"
   },
   {
     id:3,
-    Link: "/member.png",
-    text: "Membership"
+    img: "/member.png",
+    text: "Membership",
+    Link: "#Membership"
+
   },
   {
     id:4,
-    Link:"/podium.png",
-    text:"Partnership"
+    img:"/podium.png",
+    text:"Partnership",
+    Link:"#Partnership"
+  }
+]
+
+export const TeamMember = [
+  {
+    id: 1,
+    img: "",
+    teamName: "Akande Eyitoyosi",
+    teamPosition: "CEO",
+    instagram:"",
+    twitter: "",
+    facebook: "",
+    snapchat: ""
+  },
+  {
+    id:2,
+    img: "",
+    teamName: "Akande Irewole",
+    teamPosition: "COO",
+    socialImage: '/insta.png',
+    instagram:"",
+    twitter: "",
+    facebook: "",
+    snapchat: ""
+  },
+  {
+    id:3,
+    img: "",
+    teamName: "Dunji George",
+    teamPosition: "Design Lead",
+    instagram:"",
+    twitter: "",
+    facebook: "",
+    snapchat: ""  },
+  {
+    id:4,
+    img: "",
+    teamName: "Maleek Daniel",
+    teamPosition: "Events Director",
+    socialImage: '/insta.png',
+    instagram:"",
+    twitter: "",
+    facebook: "",
+    snapchat: ""
+  },
+  {
+    id:5,
+    img: "",
+    teamName: "Ogbeche Olisa",
+    teamPosition: "Program Director",
+    instagram:"",
+    twitter: "",
+    facebook: "",
+    snapchat: ""
   }
 ]

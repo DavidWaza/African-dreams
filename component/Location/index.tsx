@@ -25,7 +25,7 @@ const Location: React.FC<LocationType> = () => {
             transition={{
               delay: 0.8,
               duration: 1,
-              ease: [0, 0.71, 0.2, 1.0],
+              ease: [0.9, 0.71, 0.7, 1.01],
             }}
             className={styles.locationTitle}
           >
@@ -40,7 +40,7 @@ const Location: React.FC<LocationType> = () => {
                   default:{
                     delay: 0.9,
                     duration: 1.1,
-                    ease: [0, 0.99, 0.89, 1.01],
+                    ease: [0.9, 0.71, 0.7, 1.01],
                   }
                 }}
                 className={styles.location}
@@ -69,7 +69,7 @@ const Location: React.FC<LocationType> = () => {
             transition={{
               delay: 0.9,
               duration: 1.1,
-              ease: [0, 0.71, 0.2, 1.0],
+              ease: [0.9, 0.71, 0.7, 1.01],
             }}
             className={styles.locationButton}
           >
