@@ -542,10 +542,6 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-  .smallNav {
-    display: none;
-  }
-
   .brandName>p {
     font-size: 20px;
   }
@@ -555,7 +551,7 @@
   }
 
   .navigationMenu ul {
-    display: none;
+    display:none;
   }
 
   .navigationMenu ul {

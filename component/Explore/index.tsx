@@ -56,7 +56,7 @@ const Explore = () => {
               }}
               className={styles.exploreTitle}
             >
-              <p>Explore Nigeria with us </p>
+              <p>Explore Nigeria with us</p>
               <p>
                 We are keen on bringing to life the beauty of our country
                 Nigeria. so we perform this task through adventures/expeditions

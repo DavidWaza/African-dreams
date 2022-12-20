@@ -1,6 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import Form from "../component/Form";
+import ticketStyles from "../styles/Ticket.module.css"
 
 type paystackProps = {
   price: number;
@@ -16,8 +16,8 @@ export  const getServerSideProps= (context: { query: { price: number; }; })=> {
 
 const PaystackForm: React.FC<paystackProps> = ({ price }) => {
   return (
-    <FormLayout>
-      <FormCard>
+    <div className={ticketStyles.FormLayout}>
+      <div className={ticketStyles.FormCard}>
         <Form
           name={""}
           email={""}
@@ -29,21 +29,10 @@ const PaystackForm: React.FC<paystackProps> = ({ price }) => {
             throw new Error("Function not implemented.");
           }}
         />
-      </FormCard>
-    </FormLayout>
+      </div>
+    </div>
   );
 };
 
 export default PaystackForm;
 
-const FormLayout = styled.div`
-  display: flex;
-  justify-content: center;
-  padding-top: 10%;
-`;
-const FormCard = styled.div`
-    width: 70%
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #f3f3f3;
-    padding: 30px 50px;
-`;

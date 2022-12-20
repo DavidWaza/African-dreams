@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
+
 @font-face {
     font-family: 'Gilroy Bold';
     src: url('../utils/gilroy-fonts/Gilroy-ExtraBold.ttf');
@@ -118,7 +120,170 @@
     color: white;
 }
 
+/* PAYSTACKFORM */
+.FormLayout {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+}
 
+.FormCard {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #f3f3f3;
+    padding: 30px 50px;
+}
+
+/* BOOKING CARD */
+.BookingContainer {
+    background-color: #f3f3f3;
+    opacity: 0.9;
+    width: 50vh;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+.BookingContent {
+    padding: 5px 10px;
+}
+
+.ImgContainer {
+    background-image: url("/bush.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.EventDuration {
+    margin-top: 20px;
+    display: flex;
+}
+
+.EventTitle {
+    margin-top: 30px;
+}
+
+.Duration>p {
+    font-size: 16px;
+    margin-left: 5px;
+    font-family: "Heebo", sans-serif;
+}
+
+.LocationContainer {
+    display: flex;
+}
+
+.Location>p {
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: -2px;
+    font-family: "Heebo", sans-serif;
+}
+
+.ButtonContainer {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    border: none;
+    width: 50%;
+    color: #fff;
+    opacity: 1;
+    padding: 0 10px;
+    height: 3rem;
+    background-color: #145a32;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ButtonContainer>a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-family: "Heebo", sans-serif;
+}
+
+.ButtonContainer:hover {
+    background-color: #000;
+    color: white;
+}
+
+/* PRICING */
+.priceWrapper {
+    margin-top: 10%;
+    font-family: "Heebo", sans-serif;
+}
+
+.MainContainer {
+    padding: 3em;
+    min-height: 20rem;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #082313;
+    color: #fff;
+    opacity: 1;
+    box-shadow: 0 8px 14px -6px;
+    transition: 0.4s ease-in-out;
+}
+
+.MainContainer:hover {
+    box-shadow: 0 8px 26px -6px;
+    margin-bottom: 0.4rem;
+}
+.CaroImage {
+    background-image: url("/bush.jpg");
+    background-size: cover;
+    background-position: 10px -40px;
+    background-repeat: no-repeat;
+    min-height: 15vh;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 30%;
+    font-weight: Bold;
+    border-radius: 10px;
+}
+.PricingContainer {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.PriceContainer {
+    display: flex;
+}
+.CurrencyContainer {
+    margin-top: 0.5rem;
+    margin-right: 0.2rem;
+}
+.Price>span {
+    font-size: 3rem;
+    font-family: "Raleway", sans-serif;
+}
+.DurationWrapper {
+    margin-top: 2rem;
+}
+.SubTitle {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.4rem 0 1.3rem 0;
+    font-size: 1.3em;
+}
+.PriceButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+}
 
 
 /* MEDIA QUEURIES */
@@ -129,6 +294,10 @@
 
     .eventBanner {
         background-image: url("/campout.webp");
+    }
+
+    .EventTitle {
+        text-align: center;
     }
 }
 
@@ -149,5 +318,19 @@
 
     .bannerHeader>p:nth-child(2) {
         top: 30%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .BookingContainer {
+        width: 100%;
+    }
+
+    .ButtonContainer {
+        width: 100%;
+    }
+
+    .priceWrapper {
+        margin-top: 10%;
     }
 }

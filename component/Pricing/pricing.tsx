@@ -3,7 +3,7 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import Link from "next/link";
-import TicketStyles from "../../styles/Ticket.module.css";
+import ticketStyles from "../../styles/Ticket.module.css";
 
 type PriceProps = {
   shadow?: any;
@@ -30,42 +30,42 @@ const Pricing: React.FC<PriceProps> = ({
 }) => {
   return (
     <>
-      <PriceWrapper>
-        <MainContainer>
-          <CaroImage></CaroImage>
+      <div className={ticketStyles.PriceWrapper}>
+        <div className={ticketStyles.MainContainer}>
+          <div className={ticketStyles.CaroImage}></div>
           {price !== undefined && (
-            <PricingContainer>
-              <PriceContainer>
-                <CurrencyContainer>
+            <div className={ticketStyles.PricingContainer}>
+              <div className={ticketStyles.PriceContainer}>
+                <div className={ticketStyles.CurrencyContainer}>
                   <span>{currency}</span>
-                </CurrencyContainer>
-                <Price>
+                </div>
+                <div className={ticketStyles.Price}>
                   <span>{price/100}</span>
-                </Price>
+                </div>
                 {price > 0 && (
-                  <Duration>
+                  <div className={ticketStyles.DurationWrapper}>
                     <span>{duration === "p" ? "/P" : ""}</span>
-                  </Duration>
+                  </div>
                 )}
-              </PriceContainer>
+              </div>
               {subTitle && (
-                <SubTitle>
+                <div className={ticketStyles.SubTitle}>
                   <p>{subTitle}</p>
-                </SubTitle>
+                </div>
               )}
               {buttonContent && (
-                <ButtonContainer>
+                <div className={ticketStyles.PriceButtonContainer}>
                   <div
-                    className={TicketStyles.buttonPrice}
+                    className={ticketStyles.buttonPrice}
                   >
                     <Link href={{
                       pathname: "/paystackForm",
                       query: { price: price },
                     }}>{buttonContent}</Link>
                   </div>
-                </ButtonContainer>
+                </div>
               )}
-              {data && (
+              {/* {data && (
                 <DataContainer>
                   <ul>
                     {data.map(
@@ -90,117 +90,14 @@ const Pricing: React.FC<PriceProps> = ({
                     )}
                   </ul>
                 </DataContainer>
-              )}
-            </PricingContainer>
+              )} */}
+            </div>
           )}
-        </MainContainer>
-      </PriceWrapper>
+        </div>
+      </div>
     </>
   );
 };
 
 export default Pricing;
 
-const PriceWrapper = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
-  margin-top: 10%;
-  font-family: "Heebo", sans-serif;
-
-  @media screen and (max-width: 970px) {
-    margin-top: 10%;
-  }
-`;
-const MainContainer = styled.div`
-  padding: 3em;
-  min-height: 20rem;
-  border-radius: 10px;
-  font-weight: 500;
-  background-color:#082313;
-  color: #fff;
-  opacity: 1;
-  box-shadow: 0 8px 14px -6px;
-  transition: 0.4s ease-in-out;
-  &:hover {
-    box-shadow: 0 8px 26px -6px;
-    margin-bottom: 0.4rem;
-  }
-`;
-const CaroImage = styled.div`
-  background-image: url("/bush.jpg");
-  background-size: cover;
-  background-position: 10px -40px;
-  background-repeat: no-repeat;
-  min-height: 15vh;
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  padding-top: 30%;
-  font-weight: Bold;
-  border-radius: 10px;
-`;
-const PricingContainer = styled.div`
-  height: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 3rem;
-`;
-
-const PriceContainer = styled.div`
-  display: flex;
-`;
-
-const CurrencyContainer = styled.div`
-  margin-top: 0.5rem;
-  margin-right: 0.2rem;
-`;
-
-const Price = styled.div`
-  span {
-    font-size: 3rem;
-    font-family: "Raleway", sans-serif;
-  }
-`;
-
-const Duration = styled.div`
-  margin-top: 2rem;
-`;
-
-const SubTitle = styled.div`
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0.4rem 0 1.3rem 0;
-  font-size: 1.3em;
-`;
-
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
-  width: 100%;
-`;
-
-const DataContainer = styled.div`
-  ul {
-    list-style-type: none;
-    li {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      .true {
-        color: #34f034;
-        font-size: 1rem;
-      }
-      .false {
-        color: #f54343;
-      }
-      svg {
-        margin-right: 0.5rem;
-        font-size: 0.8rem;
-      }
-      margin-bottom: 1rem;
-    }
-  }
-`;
