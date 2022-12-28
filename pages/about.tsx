@@ -135,7 +135,7 @@ const About: React.FC<AboutUsProps> = () => {
                     className={abtStyles.AboutPng}
                   />
                   <text className={abtStyles.aboutText}>
-                    <p>Wetin We Crave for.</p>
+                    <p>The Vision.</p>
                     <motion.p
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
@@ -155,7 +155,7 @@ const About: React.FC<AboutUsProps> = () => {
                 </motion.div>
               </Col>
             </Row>
-            
+
 
             {/* MEMBERSHIP SECTION */}
 
