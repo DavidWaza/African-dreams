@@ -39,10 +39,7 @@
     text-decoration-line: underline;
     text-decoration-color: #c27662;
 }
-/* .quicklinkText:hover {
-    transform: scale(1.1);
-    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
-} */
+
 
 .QuickLinkImage {
     display: flex;
