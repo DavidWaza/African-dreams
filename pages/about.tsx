@@ -156,7 +156,6 @@ const About: React.FC<AboutUsProps> = () => {
               </Col>
             </Row>
 
-
             {/* MEMBERSHIP SECTION */}
 
             <motion.div
@@ -171,7 +170,7 @@ const About: React.FC<AboutUsProps> = () => {
             >
               <p>Meet our Team</p>
             </motion.div>
-            <Row>
+            <Row className="g-4">
               {TeamMember.map((x: any) => (
                 <Col sm={4} md={6} lg={4} key={x.id}>
                   <motion.div
@@ -182,84 +181,90 @@ const About: React.FC<AboutUsProps> = () => {
                       duration: 0.8,
                       ease: [0.9, 0.71, 0.8, 1.01],
                     }}
+                    className={abtStyles.card}
                   >
-                    <Image
-                      src="/babe.jpeg"
-                      alt={""}
-                      width={230}
-                      height={230}
-                      className={` img-responsive ${abtStyles.roundedImage}`}
-                    />
-                    <motion.p
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{
-                        delay: 0.5,
-                        duration: 0.8,
-                        ease: [0.9, 0.71, 0.8, 1.01],
-                      }}
-                      className={abtStyles.teamName}
-                    >
-                      {x.teamName}
-                    </motion.p>
-                    <motion.p
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{
-                        delay: 0.5,
-                        duration: 0.8,
-                        ease: [0.9, 0.71, 0.8, 1.01],
-                      }}
-                      className={abtStyles.teamPosition}
-                    >
-                      {x.teamPosition}
-                    </motion.p>
-
-                    <motion.div
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      transition={{
-                        delay: 0.5,
-                        duration: 0.8,
-                        ease: [0.9, 0.71, 0.8, 1.01],
-                      }}
-                      className={abtStyles.socialHandles}
-                    >
-                      {/* instagram */}
-                      <Link href={x.instagram}>
+                    <div className={abtStyles.cardInfo}>
+                      <div className={abtStyles.cardAvatar}>
                         <Image
-                          src="/insta.png"
+                          src="/babe.jpeg"
                           alt={""}
-                          height={20}
-                          width={20}
+                          width={120}
+                          height={120}
+                          className={` img-responsive ${abtStyles.roundedImage}`}
                         />
-                      </Link>
+                      </div>
+                      <motion.p
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{
+                          delay: 0.5,
+                          duration: 0.8,
+                          ease: [0.9, 0.71, 0.8, 1.01],
+                        }}
+                        className={abtStyles.teamName}
+                      >
+                        {x.teamName}
+                      </motion.p>
+                      <motion.p
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{
+                          delay: 0.5,
+                          duration: 0.8,
+                          ease: [0.9, 0.71, 0.8, 1.01],
+                        }}
+                        className={abtStyles.teamPosition}
+                      >
+                        {x.teamPosition}
+                      </motion.p>
+                    </div>
+                    <ul className={abtStyles.cardSocial}>
+                      <li className={abtStyles.cardSocialItem}>
+                        {/* instagram */}
+                        <Link href={x.instagram}>
+                          <Image
+                            src="/ig-noir.png"
+                            alt={""}
+                            height={30}
+                            width={30}
+                          />
+                        </Link>
+                      </li>
+                      <li className={abtStyles.cardSocialItem}>
+                        {/* twitter */}
+                        <Link href={x.twitter}>
+                          <Image
+                            src="/twitter-noir.png"
+                            alt={""}
+                            height={30}
+                            width={30}
+                          />
+                        </Link>
+                      </li>
+                      <li className={abtStyles.cardSocialItem}>
+                        {/* facebook */}
+                        <Link href={x.facebook}>
+                          <Image
+                            src="/fb-noir.png"
+                            alt={""}
+                            height={30}
+                            width={30}
+                          />
+                        </Link>
+                      </li>
 
-                      {/* twitter */}
-                      <Link href={x.twitter}>
-                        <Image
-                          src="/twitt.png"
-                          alt={""}
-                          height={20}
-                          width={20}
-                        />
-                      </Link>
-
-                      {/* facebook */}
-                      <Link href={x.facebook}>
-                        <Image src="/fbk.png" alt={""} height={20} width={20} />
-                      </Link>
-
-                      {/* snapchat */}
-                      <Link href={x.snapchat}>
-                        <Image
-                          src="/snapchat.png"
-                          alt={""}
-                          height={20}
-                          width={20}
-                        />
-                      </Link>
-                    </motion.div>
+                      <li className={abtStyles.cardSocialItem}>
+                        {/* snapchat */}
+                        <Link href={x.snapchat}>
+                          <Image
+                            src="/snap-noir.png"
+                            alt={""}
+                            height={30}
+                            width={30}
+                          />
+                        </Link>
+                      </li>
+                    </ul>
                   </motion.div>
                 </Col>
               ))}

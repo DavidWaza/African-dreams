@@ -39,34 +39,48 @@
     text-decoration-line: underline;
     text-decoration-color: #c27662;
 }
+/* .quicklinkText:hover {
+    transform: scale(1.1);
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+} */
 
 .QuickLinkImage {
     display: flex;
     margin: auto;
+    cursor: pointer;
+}
+.QuickLinkImage:hover, .quicklinkText:hover, .textContent:hover {
+    transform: scale(1.1);
+    transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .sectionDiv {
     margin-top: 10%;
 }
+
 .aboutContent {
     margin-top: 5%;
     margin-bottom: 15%;
 }
+
 .aboutText>p:nth-child(1) {
     color: #f3f3f3;
     font-weight: 500;
     font-size: 3em;
     font-family: 'Playfair Display', serif;
 }
+
 .aboutText>p:nth-child(2) {
     color: #f3f3f3;
     font-weight: 200;
     font-size: 1.3em;
     font-family: 'Heebo', sans-serif;
 }
+
 .aboutText>p:nth-child(2) span {
     color: #c27662;
 }
+
 .aboutImageCarousel {
     background-image: url('/bushdoings.jpeg');
     background-size: cover;
@@ -74,6 +88,7 @@
     height: 50vh;
     border-radius: 30px;
 }
+
 .visionImageCarousel {
     background-image: url('/babe.jpeg');
     background-size: cover;
@@ -87,6 +102,7 @@
     display: flex;
     justify-content: center;
 }
+
 .TeamTitle>p {
     color: #f3f3f3;
     font-size: 2em;
@@ -94,19 +110,22 @@
     font-family: "Playfair Display", sans-serif;
     margin-bottom: 10%;
 }
+
 .roundedImage {
     border-radius: 50%;
     display: flex;
     justify-content: center;
     margin: auto;
 }
+
 .teamName {
-    color: #f3f3f3;
+    color: #000;
     text-align: center;
     margin-top: 20px;
     font-family: "Heebo", sans-serif;
     font-size: 2em;
 }
+
 .teamPosition {
     color: #c27662;
     text-align: center;
@@ -114,10 +133,63 @@
     font-family: "Playfair Display", sans-serif;
     font-size: 1.5em;
 }
-.socialHandles {
+
+
+/* about cards */
+.card {
+    width: 100%;
+    background: #fef3f3;
+    padding: 2rem 1.5rem;
+    transition: box-shadow .3s ease, transform .2s ease;
+}
+
+.cardInfo {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+/*Card footer*/
+.cardSocial {
+    transform: translateY(200%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    opacity: 0;
+    transition: transform .2s ease, opacity .2s ease;
     margin-bottom: 10%;
+}
+
+.cardSocialItem {
+    list-style: none;
+}
+
+
+
+/*Hover*/
+.card:hover {
+    box-shadow: 0 8px 50px #23232333;
+}
+
+.card:hover .cardInfo {
+    transform: translateY(-5%);
+}
+
+.card:hover .cardSocial {
+    transform: translateY(100%);
+    opacity: 1;
+}
+
+.cardSocialItem svg:hover {
+    fill: #232323;
+    transform: scale(1.1);
+}
+
+.cardAvatar:hover {
+    transform: scale(1.1);
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /* MEDIA QUERY */
@@ -126,9 +198,11 @@
     .aboutText>p:nth-child(1) {
         text-align: center;
     }
+
     .aboutText>p:nth-child(2) {
         text-align: center;
     }
+
     .AboutPng {
         display: flex;
         justify-content: center;
