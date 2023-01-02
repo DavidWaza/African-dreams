@@ -138,6 +138,7 @@
     background: #fef3f3;
     padding: 2rem 1.5rem;
     transition: box-shadow .3s ease, transform .2s ease;
+    border-radius: 30px;
 }
 
 .cardInfo {
@@ -179,15 +180,81 @@
     opacity: 1;
 }
 
-.cardSocialItem svg:hover {
-    fill: #232323;
-    transform: scale(1.1);
-}
 
 .cardAvatar:hover {
     transform: scale(1.1);
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+/* MEMBERSHIP */
+.memberWrapper {
+    margin-top: 10%;
+    
+}
+
+.memberTitle {
+    display: flex;
+    justify-content: start;
+    padding-left: 5%;
+    margin-bottom: 5%;
+}
+.memberTitle > h1 {
+    color: #f3f3f3;
+    font-family: "Heebo", sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.09rem;
+    margin-left: 2%;
+}
+.memberContainer {
+    background-color: #fef3f3;
+    width: 100%;
+    margin-top: 5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding:5rem;
+    font-family: "Heebo", sans-serif;
+    font-size: 1.1rem;
+}
+.memberContainer > p {
+    display: flex;
+    justify-content: center;
+
+}
+.memberImgBg {
+    background-image: url("/men.jpeg");
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    padding: 0;
+    margin: 0;
+}
+.benefit {
+    font-size: 1.3rem;
+    font-family: "Heebo", sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    padding: 0;
+    margin: 0;
+}
+.benefitLists > li {
+    font-family: "Heebo", sans-serif;
+    font-size: 1.1rem;
+}
+.topLevel {
+    margin-top: 5%;
+    color: #f3f3f3;
+    font-family: "Heebo", sans-serif;
+    font-size: 1.2rem;
+}
+.topLevelSlug {
+    font-size: larger;
+}
+
+.partnerships {
+    text-align: center;
+    color: #fef3f3;
+    font-family: "Heebo", sans-serif;
+}
+
 
 /* MEDIA QUERY */
 @media screen and (max-width: 768px) {
@@ -204,5 +271,12 @@
         display: flex;
         justify-content: center;
         margin: auto;
+    }
+    .QuickLink, .QuickLinkImage, .textContent {
+        display: none;
+    }
+    .memberContainer {
+        padding: 2rem;
+        /* margin: 0; */
     }
 }
