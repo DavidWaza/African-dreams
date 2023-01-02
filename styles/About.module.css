@@ -254,6 +254,9 @@
     color: #fef3f3;
     font-family: "Heebo", sans-serif;
 }
+.partnerships p {
+    font-size: 1.1rem;
+}
 
 
 /* MEDIA QUERY */
