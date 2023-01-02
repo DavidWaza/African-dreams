@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import Head from "next/head";
 import Image from "next/image";
 import abtStyles from "../styles/About.module.css";
 import {
@@ -24,6 +25,14 @@ type AboutUsProps = {
 const About: React.FC<AboutUsProps> = () => {
   return (
     <>
+      <Head>
+        <title>AD|About</title>
+        <meta
+          name="description"
+          content="Hiking, Mountain, fun, climb, extra activity, activities, parties"
+        />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
       <div className={abtStyles.HeroSection}>
         <div className={abtStyles.HeroContent}>
           <div className={abtStyles.HeroText}>
