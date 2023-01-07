@@ -252,15 +252,13 @@ const About: React.FC<AboutUsProps> = () => {
                           />
                         </Link>
                       </li>
-
                       <li className={abtStyles.cardSocialItem}>
-                        {/* snapchat */}
                         <Link href={x.snapchat}>
                           <Image
                             src="/snap-noir.png"
                             alt={""}
-                            height={30}
-                            width={30}
+                            height={40}
+                            width={40}
                           />
                         </Link>
                       </li>

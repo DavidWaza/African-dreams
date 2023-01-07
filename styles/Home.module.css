@@ -38,7 +38,11 @@
   transition-duration: 500ms;
 
 }
-
+.logo {
+  position: relative;
+  height: 170px;
+  width: 250px;
+}
 .navigation.down {
   top: -6rem;
   background-color: #CF5B3E;

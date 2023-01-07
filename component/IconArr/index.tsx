@@ -36,26 +36,13 @@ export const Locations: any[] = [
     image: "/abuja.png",
     title: "Abuja",
   },
+
   {
     id: 3,
-    image: "/minna.png",
-    title: "Minna",
-  },
-  {
-    id: 4,
     image: "/jos.png",
     title: "Jos",
   },
-  {
-    id: 5,
-    image: "/kogi.png",
-    title: "Kogi",
-  },
-  {
-    id: 6,
-    image: "/texas.png",
-    title: "Texas",
-  },
+
 ];
 export const FooterArr: any[] = [
   {

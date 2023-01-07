@@ -1,20 +1,27 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../../styles/Home.module.css";
-import useScrollDirection from "../scrollDirection/scrollDirection"
+import useScrollDirection from "../scrollDirection/scrollDirection";
 
 const Navbar: any = () => {
   const [isNavExpanded, setIsNavExpanded] = useState<any>(false);
 
-  const scrollDirection = useScrollDirection()
-
+  const scrollDirection = useScrollDirection();
 
   return (
     <>
-      <nav className={`${styles.navigation} ${scrollDirection === "down" ? "hide" : "show"}`}>
-        <Link href="/" className={styles.brandName}>
-          <p>African Dream Network</p>
-        </Link>
+      <nav
+        className={`${styles.navigation} ${
+          scrollDirection === "down" ? "hide" : "show"
+        }`}
+      >
+        <div className={styles.logo}>
+          <Link href="/" className={styles.brandName}>
+            <Image src="/The Dream Logo black.png" alt="logo" fill />
+          </Link>
+        </div>
+
         <button
           className={styles.hamburger}
           id="text"
