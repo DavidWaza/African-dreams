@@ -1,8 +1,16 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import Head from "next/head";
 import Image from "next/image";
 import abtStyles from "../styles/About.module.css";
-import { QuickLinks } from "../component/IconArr";
+import {
+  benefits,
+  curriculum,
+  engage,
+  experiences,
+  perks,
+  QuickLinks,
+} from "../component/IconArr";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { TeamMember } from "../component/IconArr/index";
@@ -17,6 +25,14 @@ type AboutUsProps = {
 const About: React.FC<AboutUsProps> = () => {
   return (
     <>
+      <Head>
+        <title>AD|About</title>
+        <meta
+          name="description"
+          content="Hiking, Mountain, fun, climb, extra activity, activities, parties"
+        />
+        {/* <link rel="icon" href="/favicon.ico" /> */}
+      </Head>
       <div className={abtStyles.HeroSection}>
         <div className={abtStyles.HeroContent}>
           <div className={abtStyles.HeroText}>
@@ -269,6 +285,303 @@ const About: React.FC<AboutUsProps> = () => {
             </Row>
           </Container>
         </div>
+      </section>
+      <section id="Membership" className={abtStyles.memberWrapper}>
+        <div className={abtStyles.memberTitle}>
+          <Image src="/member.png" alt="" height={70} width={70} />
+          <h1>membership</h1>
+        </div>
+        <Container>
+          <Row className="g-0">
+            <Col sm={5}>
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+                className={abtStyles.memberImgBg}
+              ></motion.div>
+            </Col>
+            <Col sm={7}>
+              <div className={abtStyles.memberContainer}>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  transition={{
+                    delay: 0.8,
+                    duration: 0.8,
+                    ease: [0.9, 0.71, 0.8, 1.01],
+                  }}
+                >
+                  ADC is a community for young entrepreneurs, creatives and
+                  innovative professionals who are passionate about learning
+                  from fellow youths and ready to take the unprecedented leap to
+                  unite African youth in the hope to leverage these
+                  relationships, knowledge and collaboration to reimagine what
+                  it means to be African.
+                </motion.p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container className={abtStyles.memberContainer}>
+          <Row>
+            <Col className={abtStyles.benefit}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                membership benefit
+              </motion.p>
+              <ul className={abtStyles.benefitLists}>
+                {benefits.map((x) => (
+                  <li key={x.id}>{x.text}</li>
+                ))}
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container className={abtStyles.topLevel}>
+          <Row>
+            <Col lg={8}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+                className={abtStyles.topLevelSlug}
+              >
+                Learning for Leading Minds and top level professionals
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                ADC members are invited to attend networking events, dinners and
+                seminars with the leading minds in Nigeria/Africa, They will
+                also have unrestricted access to the ADC podcast content. The
+                curriculum includes:
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.9,
+                  duration: 0.5,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                <ul className={abtStyles.benefitList}>
+                  {curriculum.map((x) => (
+                    <li key={x.id}>{x.text}</li>
+                  ))}
+                </ul>
+              </motion.p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container className={abtStyles.topLevel}>
+          <Row>
+            <Col lg={8}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+                className={abtStyles.topLevelSlug}
+              >
+                Attend Exciting gatherings
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                ADC members will get access to exciting annual ADC experiences
+                across the country and Africa as a whole including but not
+                limited to:
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.9,
+                  duration: 0.5,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                <ul className={abtStyles.benefitList}>
+                  {experiences.map((x) => (
+                    <li key={x.id}>{x.text}</li>
+                  ))}
+                </ul>
+              </motion.p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container className={abtStyles.topLevel}>
+          <Row>
+            <Col lg={8}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+                className={abtStyles.topLevelSlug}
+              >
+                Establish a lifelong connection
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.8,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                Our community cultivates lasting bonds between diverse groups of
+                passionate members to elevate their lives and amplify their
+                impact.
+              </motion.p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container className={abtStyles.topLevel}>
+          <Row>
+            <Col lg={8}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+                className={abtStyles.topLevelSlug}
+              >
+                Membership perks
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.9,
+                  duration: 0.5,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                <ul className={abtStyles.benefitList}>
+                  {perks.map((x) => (
+                    <li key={x.id}>{x.text}</li>
+                  ))}
+                </ul>
+              </motion.p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container className={abtStyles.topLevel}>
+          <Row>
+            <Col lg={8}>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.5,
+                  duration: 0.8,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+                className={abtStyles.topLevelSlug}
+              >
+                Engage with ADN
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.9,
+                  duration: 0.5,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                <ul className={abtStyles.benefitList}>
+                  {engage.map((x) => (
+                    <li key={x.id}>{x.text}</li>
+                  ))}
+                </ul>
+              </motion.p>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section id="Partnership">
+        <Container className={abtStyles.partnerships}>
+          <Row>
+            <Col>
+              <div className={abtStyles.partnerTitle}>
+                <Image src="/podium.png" alt="" height={55} width={55} />
+                <h1>Partnership</h1>
+              </div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{
+                  delay: 0.9,
+                  duration: 0.5,
+                  ease: [0.9, 0.71, 0.8, 1.01],
+                }}
+              >
+                The African Dream Community is made up of youths in Africa who
+                aim to grow personally, professionally and socially within their
+                immediate communities. Through ADC, youths of all backgrounds
+                engage in events, professional meetups and diverse experiences.
+                Through these engagements, ADC strives to unify youths and young
+                adults in Africa and provide a lifelong supply of camaraderie,
+                opportunities and ideas. We are in partnerships with highly
+                reputable outfits ranging from security, hospitality, travels
+                e.t.c
+              </motion.p>
+            </Col>
+          </Row>
+        </Container>
       </section>
     </>
   );

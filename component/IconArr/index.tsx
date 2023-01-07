@@ -109,36 +109,35 @@ export const PricingArr = [
     buttonContent: "Buy Now",
     subTitle: "Gang Camping Pass",
     headerText: "Bush Doings",
-  }
-]
+  },
+];
 
 export const QuickLinks = [
   {
-    id:1,
-    img:"/favorite.png",
-    text: 'About Us',
-    Link: '#About'
+    id: 1,
+    img: "/favorite.png",
+    text: "About Us",
+    Link: "#About",
   },
   {
-    id:2,
+    id: 2,
     img: "/binoculars.png",
-    text:"ADC Vision",
-    Link: "#ADC"
+    text: "ADC Vision",
+    Link: "#ADC",
   },
   {
-    id:3,
+    id: 3,
     img: "/member.png",
     text: "Membership",
-    Link: "#Membership"
-
+    Link: "#Membership",
   },
   {
-    id:4,
-    img:"/podium.png",
-    text:"Partnership",
-    Link:"#Partnership"
-  }
-]
+    id: 4,
+    img: "/podium.png",
+    text: "Partnership",
+    Link: "#Partnership",
+  },
+];
 
 export const TeamMember = [
   {
@@ -146,50 +145,204 @@ export const TeamMember = [
     img: "",
     teamName: "Akande Eyitoyosi",
     teamPosition: "CEO",
-    instagram:"",
+    instagram: "",
     twitter: "",
     facebook: "",
-    snapchat: ""
+    snapchat: "",
   },
   {
-    id:2,
+    id: 2,
     img: "",
     teamName: "Akande Irewole",
     teamPosition: "COO",
-    socialImage: '/insta.png',
-    instagram:"",
+    socialImage: "/insta.png",
+    instagram: "",
     twitter: "",
     facebook: "",
-    snapchat: ""
+    snapchat: "",
   },
   {
-    id:3,
+    id: 3,
     img: "",
     teamName: "Dunji George",
     teamPosition: "Design Lead",
-    instagram:"",
+    instagram: "",
     twitter: "",
     facebook: "",
-    snapchat: ""  },
+    snapchat: "",
+  },
   {
-    id:4,
+    id: 4,
     img: "",
     teamName: "Maleek Daniel",
     teamPosition: "Events Director",
-    socialImage: '/insta.png',
-    instagram:"",
+    socialImage: "/insta.png",
+    instagram: "",
     twitter: "",
     facebook: "",
-    snapchat: ""
+    snapchat: "",
   },
   {
-    id:5,
+    id: 5,
     img: "",
     teamName: "Ogbeche Olisa",
     teamPosition: "Program Director",
-    instagram:"",
+    instagram: "",
     twitter: "",
     facebook: "",
-    snapchat: ""
-  }
-]
+    snapchat: "",
+  },
+];
+
+export const benefits = [
+  {
+    id: 1,
+    text: "Professionals: Premium access to our facilities and VIP packages on all engagements throughout the year",
+  },
+  {
+    id: 2,
+    text: "Learning from Leading Minds and top level professionals",
+  },
+  {
+    id: 3,
+    text: "Attending exciting gatherings",
+  },
+  {
+    id: 4,
+    text: "Business networking",
+  },
+  {
+    id: 5,
+    text: "Establish Lifelong connections",
+  },
+];
+export const curriculum = [
+  {
+    id: 1,
+    text: "Tourism",
+  },
+  {
+    id: 2,
+    text: "Business",
+  },
+  {
+    id: 3,
+    text: "Music",
+  },
+  {
+    id: 4,
+    text: "Dance",
+  },
+  {
+    id: 5,
+    text: "Art & Culture",
+  },
+  {
+    id: 6,
+    text: "Engineering",
+  },
+  {
+    id: 7,
+    text: "Policy/Government",
+  },
+  {
+    id: 8,
+    text: "Health / Well-being",
+  },
+  {
+    id: 9,
+    text: "Social impact",
+  },
+  {
+    id: 10,
+    text: "Entrepreneurship",
+  },
+];
+export const experiences = [
+  {
+    id: 1,
+    text: "Seminars from leading minds",
+  },
+  {
+    id: 2,
+    text: "Hiking and camping",
+  },
+  {
+    id: 3,
+    text: "Boot camps",
+  },
+  {
+    id: 4,
+    text: "Skills acquisitions",
+  },
+  {
+    id: 5,
+    text: "Game Nights",
+  },
+  {
+    id: 6,
+    text: "Galas & Art Galerry receptions",
+  },
+  {
+    id: 7,
+    text: "intimate dinners with VIPs",
+  },
+  {
+    id: 8,
+    text: "Cultural outing",
+  },
+  {
+    id: 9,
+    text: "Volunteering/Social Impact experiences",
+  },
+  {
+    id: 10,
+    text: "Movie Nights",
+  },
+  {
+    id: 11,
+    text: "Fitness & Wellness",
+  },
+  {
+    id: 12,
+    text: "Travel to Nigerian states and other African countries",
+  },
+];
+
+export const perks = [
+  {
+    id: 1,
+    text: "Free ADC merchandise (Shirts, Caps, Tank Tops and Wrist Band)",
+  },
+  {
+    id: 2,
+    text: "Free admission to exclusive ADC events",
+  },
+  {
+    id: 3,
+    text: "Discounted costs for other events",
+  },
+  {
+    id: 4,
+    text: "Access to a wide array of professionals in industry",
+  },
+];
+
+export const engage = [
+  {
+    id: 1,
+    text: "Follow us on social media (@africandream_ng)",
+  },
+  {
+    id: 2,
+    text: "Attend an event",
+  },
+  {
+    id: 3,
+    text: "Try out a free month of membership",
+  },
+  {
+    id: 4,
+    text: "Listen to our podcast",
+  },
+];
