@@ -559,24 +559,29 @@
   justify-content: center;
   padding-inline-start: 1.5em;
 }
-
-.notFound>p:nth-child(1) {
+.notFound>p:nth-child(1){
+  font-size: clamp(1em, 0.85rem + 1.5vw, 2em);
+  text-align: center;
+  font-family: "Gilroy Bold";
+  padding-block-start: 0.4em;
+}
+.notFound>p:nth-child(2) {
   font-size: clamp(1em, 0.75rem + 1.5vw, 2em);
   display: flex;
   justify-content: center;
-  padding-block-start: 1em;
+  padding-block-start: 0.1em;
   font-family: "Circular STD";
   line-height: 1.65;
   max-inline-size: 66ch;
 
 }
 
-.notFound>p:nth-child(1)>span {
+.notFound>p:nth-child(2)>span {
   color: #CF5B3E;
   font-family: 'Gilroy Bold';
 }
 
-.notFound>p:nth-child(2) {
+.notFound>p:nth-child(3) {
   font-size: 1em;
   display: flex;
   justify-content: center;
@@ -783,13 +788,13 @@
     width: 200pxS;
   }
 
-  .campContent>p:nth-child(1) {
+  /* .campContent>p:nth-child(1) {
     font-size: 1.2em;
   }
 
   .campContent>p:nth-child(2) {
     font-size: 1em;
-  }
+  } */
   .notFoundBG{
     width: 70%;
   }

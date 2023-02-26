@@ -10,11 +10,12 @@ const NotFound = () => {
         <Image src="/wolf.png" alt="wolf" height={170} width={200} />
       </div>
       <div className={styles.notFound}>
+        <p>ooppps!!</p>
         <p>
-          ooppps!! You are wide into the &nbsp;<span>jungle</span>
+          You are wide into the &nbsp;<span>jungle</span>
         </p>
         <p>
-          Kindly go back to &nbsp;<Link href="/">Camp!</Link>
+          Take this route back to &nbsp;<Link href="/">Camp!</Link>
         </p>
       </div>
     </div>
