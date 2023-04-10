@@ -8,6 +8,6 @@ African Dreams also offers various forms of support, entertainment, and recreati
 The website features a Paystack payment gateway that allows users and participants to conveniently make payments for events. Additionally, the website displays the events for reference and follow-up purposes.
 
 ## Stacks for Applications
-[Next JS 12](https://nextjs.org)
-[TypeScript](https://www.typescriptlang.org/)
-[React Bootstrap](https://www.reactbootstrap.github.oi)
+- [Next JS 12](https://nextjs.org)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Bootstrap](https://www.reactbootstrap.github.oi)
